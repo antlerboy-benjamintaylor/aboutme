@@ -122,6 +122,7 @@
   const rabbitTitle = document.getElementById('rabbit-title');
   const rabbitNote = document.getElementById('rabbit-note');
   const rabbitOpen = document.getElementById('rabbit-open');
+  const rabbitHeading = rabbitButton ? rabbitButton.closest('section')?.querySelector('h2.section-title') : null;
   let lastRabbit = -1;
 
   function surprise() {
@@ -144,6 +145,21 @@
   if (rabbitButton) {
     rabbitButton.addEventListener('click', surprise);
     surprise();
+  }
+
+  if (rabbitHeading) {
+    rabbitHeading.setAttribute('role', 'button');
+    rabbitHeading.setAttribute('tabindex', '0');
+    rabbitHeading.setAttribute('aria-label', 'Show me another unexpected thing');
+    rabbitHeading.setAttribute('title', 'Click for another unexpected thing');
+    rabbitHeading.style.cursor = 'pointer';
+    rabbitHeading.addEventListener('click', surprise);
+    rabbitHeading.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        surprise();
+      }
+    });
   }
 
   document.querySelectorAll('[data-close-dialog]').forEach(button => {
