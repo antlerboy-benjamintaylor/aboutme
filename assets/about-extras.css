@@ -1,0 +1,67 @@
+.hero-side { display: grid; gap: 18px; align-content: center; }
+.portrait-shell { position: relative; width: min(100%, 300px); margin: 0 auto; isolation: isolate; }
+.portrait-button { display: block; width: 100%; padding: 0; border: 0; border-radius: 22px; background: transparent; cursor: pointer; position: relative; z-index: 2; box-shadow: var(--shadow); }
+.portrait-button:focus-visible { outline: 3px solid var(--rq-gold); outline-offset: 5px; }
+.portrait-button img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 22px; border: 1px solid rgba(62,9,8,.15); background: #eee; }
+.portrait-hint { margin: 8px 3px 0; color: var(--muted); font-size: .76rem; text-align: center; opacity: .75; }
+.antler-overlay { position: absolute; left: -22%; top: -28%; width: 144%; height: 58%; z-index: 1; overflow: visible; pointer-events: none; }
+.antler-branch { fill: none; stroke: #68483a; stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; opacity: 0; transition: opacity .38s ease; }
+.antler-branch.visible { opacity: .58; }
+.banana-button { border: 0; background: none; padding: 0 3px; margin-left: 7px; font-size: .9rem; vertical-align: 2px; cursor: pointer; opacity: .16; filter: saturate(.75); transition: opacity .15s ease, transform .15s ease; }
+.banana-button:hover, .banana-button:focus-visible { opacity: .62; transform: rotate(-7deg); }
+.banana-button:focus-visible { outline: 2px solid var(--rq-gold); outline-offset: 3px; border-radius: 5px; }
+.dialog-card { width: min(92vw, 760px); border: 1px solid var(--line); border-radius: 20px; padding: 0; box-shadow: 0 24px 80px rgba(0,0,0,.24); background: var(--paper); color: var(--ink); }
+.dialog-card::backdrop { background: rgba(24,15,14,.56); backdrop-filter: blur(2px); }
+.dialog-inner { padding: 26px; }
+.dialog-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+.dialog-top h2 { color: var(--rq-red); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.7rem, 4vw, 2.5rem); }
+.dialog-close { border: 1px solid var(--line); background: white; border-radius: 999px; width: 36px; height: 36px; font-size: 1.3rem; line-height: 1; cursor: pointer; flex: 0 0 auto; }
+.banana-line { font-family: Georgia, "Times New Roman", serif; color: var(--rq-chocolate); font-size: 1.45rem; font-weight: 700; margin: 22px 0 12px; }
+.banana-copy p { max-width: 68ch; }
+.gallery-dialog { width: min(94vw, 920px); }
+.gallery-stage { margin-top: 18px; min-height: 420px; display: grid; place-items: center; background: #f3f1ed; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+.gallery-stage img { display: block; width: 100%; max-height: 66vh; object-fit: contain; }
+.gallery-image-button { border: 0; padding: 0; margin: 0; background: transparent; cursor: pointer; width: 100%; }
+.gallery-caption { display: flex; gap: 14px; align-items: center; justify-content: space-between; margin-top: 14px; }
+.gallery-title { font-weight: 800; color: var(--rq-chocolate); }
+.gallery-controls { display: flex; gap: 8px; }
+.gallery-controls button { border: 1px solid var(--rq-grey); background: white; color: var(--rq-chocolate); border-radius: 999px; padding: 8px 13px; cursor: pointer; font-weight: 700; }
+.gallery-link { display: none; margin-top: 12px; font-weight: 800; }
+.gallery-link.visible { display: inline-block; }
+.news-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.news-item { border-top: 3px solid var(--rq-red); padding: 17px 17px 16px; background: #fff; box-shadow: 0 4px 15px rgba(62,9,8,.04); min-height: 190px; }
+.news-meta { color: var(--rq-gold); text-transform: uppercase; letter-spacing: .08em; font-size: .72rem; font-weight: 800; }
+.news-item h3 { margin-top: 8px; font-family: Georgia, "Times New Roman", serif; color: var(--rq-chocolate); font-size: 1.2rem; }
+.news-item p { margin: 9px 0 0; color: #3b3b3b; font-size: .94rem; }
+.news-item a { display: inline-block; margin-top: 12px; font-weight: 800; }
+.rabbit-box { border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; background: linear-gradient(135deg, #fff 0%, #fff 72%, #f7f1eb 100%); box-shadow: var(--shadow); max-width: 900px; }
+.rabbit-type { color: var(--rq-gold); text-transform: uppercase; letter-spacing: .1em; font-weight: 800; font-size: .75rem; }
+.rabbit-box h3 { margin-top: 7px; color: var(--rq-chocolate); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.45rem, 3vw, 2rem); }
+.rabbit-box p { margin: 10px 0 0; max-width: 70ch; }
+.rabbit-actions { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.rabbit-actions button { border: 2px solid var(--rq-red); background: var(--rq-red); color: #fff; border-radius: 999px; padding: 10px 16px; font-weight: 800; cursor: pointer; }
+.rabbit-open { display: none; font-weight: 800; }
+.rabbit-open.visible { display: inline; }
+.archive-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start; }
+.archive-column { min-width: 0; }
+.archive-column h3 { color: var(--rq-chocolate); font-family: Georgia, "Times New Roman", serif; font-size: 1.65rem; margin-bottom: 14px; }
+.compact-list { margin: 0; padding: 0; list-style: none; }
+.compact-list li { padding: 12px 0; border-top: 1px solid var(--line); }
+.compact-list li:first-child { border-top: 0; padding-top: 0; }
+.compact-list a { font-weight: 750; }
+.compact-list small { display: block; color: var(--muted); margin-top: 3px; line-height: 1.35; }
+.groups-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0 28px; }
+.group-note { color: var(--muted); font-size: .9rem; margin-top: 4px; }
+.discussion-pixel { position: fixed; right: 8px; bottom: 8px; width: 5px; height: 5px; background: var(--rq-red); opacity: .22; z-index: 50; border-radius: 1px; }
+.discussion-pixel:hover, .discussion-pixel:focus { opacity: .9; outline: 2px solid var(--rq-gold); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 860px) {
+  .portrait-shell { width: min(72vw, 285px); }
+  .hero-side { max-width: 620px; }
+  .news-strip, .archive-grid, .groups-grid { grid-template-columns: 1fr; }
+  .news-item { min-height: 0; }
+  .gallery-stage { min-height: 260px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .antler-branch, .banana-button { transition: none !important; }
+}
