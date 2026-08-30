@@ -27,6 +27,9 @@ jobs:
           cp 404.html _site/404.html
           cp robots.txt _site/robots.txt
           cp sitemap.xml _site/sitemap.xml
+          cp CNAME _site/CNAME
+          cp -R assets _site/assets
+          cp -R library _site/library
           touch _site/.nojekyll
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
