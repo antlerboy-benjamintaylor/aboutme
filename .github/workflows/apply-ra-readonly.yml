@@ -1,0 +1,43 @@
+name: Apply Requisite Agility read-only link
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: contains(github.event.head_commit.message, '[apply-ra-link]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Download and apply the link update
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive=/tmp/aboutme-ra-readonly-link-update.tar.gz
+          valid=false
+          for url in \
+            'https://drive.usercontent.google.com/download?id=102seedpQ1Pn1NsxDkknEp0Y7OTOBEOqV&export=download&confirm=t' \
+            'https://drive.google.com/uc?export=download&id=102seedpQ1Pn1NsxDkknEp0Y7OTOBEOqV'; do
+            rm -f "$archive"
+            if curl -L --fail --retry 3 --retry-delay 2 "$url" -o "$archive" && tar -tzf "$archive" >/dev/null 2>&1; then
+              valid=true
+              break
+            fi
+          done
+          test "$valid" = true
+          tar -xzf "$archive" -C .
+          git config user.name 'antlerboy library publisher'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'Use a read-only public copy for the Requisite Agility draft'
+          git pull --rebase origin main
+          git push origin HEAD:main
