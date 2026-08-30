@@ -54,13 +54,23 @@
   const galleryImage = document.getElementById('gallery-image');
   const galleryTitle = document.getElementById('gallery-title');
   const galleryLink = document.getElementById('gallery-link');
-  const galleryPrev = document.getElementById('gallery-prev');
-  const galleryNext = document.getElementById('gallery-next');
   const galleryImageButton = document.getElementById('gallery-image-button');
-  let galleryIndex = 0;
+  let lastPortrait = -1;
 
-  function renderGallery() {
-    const item = gallery[galleryIndex];
+  function randomIndex(max) {
+    if (window.crypto && window.crypto.getRandomValues) {
+      const bucket = new Uint32Array(1);
+      window.crypto.getRandomValues(bucket);
+      return bucket[0] % max;
+    }
+    return Math.floor(Math.random() * max);
+  }
+
+  function renderRandomPortrait() {
+    let next = randomIndex(gallery.length);
+    if (gallery.length > 1 && next === lastPortrait) next = (next + 1) % gallery.length;
+    lastPortrait = next;
+    const item = gallery[next];
     galleryImage.src = item.src;
     galleryImage.alt = `Benjamin P Taylor — ${item.label}`;
     galleryTitle.textContent = item.label;
@@ -75,21 +85,18 @@
     }
   }
 
-  function moveGallery(delta) {
-    galleryIndex = (galleryIndex + delta + gallery.length) % gallery.length;
-    renderGallery();
+  if (galleryImageButton) {
+    galleryImageButton.disabled = true;
+    galleryImageButton.setAttribute('aria-label', 'Random Benjamin portrait');
   }
 
   if (galleryOpen && galleryDialog) {
+    galleryOpen.setAttribute('aria-label', 'Open a random Benjamin portrait');
     galleryOpen.addEventListener('click', () => {
-      galleryIndex = 0;
-      renderGallery();
+      renderRandomPortrait();
       galleryDialog.showModal();
     });
   }
-  if (galleryPrev) galleryPrev.addEventListener('click', () => moveGallery(-1));
-  if (galleryNext) galleryNext.addEventListener('click', () => moveGallery(1));
-  if (galleryImageButton) galleryImageButton.addEventListener('click', () => moveGallery(1));
 
   const rabbitItems = [
     { type: 'old essay', title: 'Why I was wrong to call John Seddon ‘you old bastard’', note: 'An old argument about systems thinking, practice, disagreement, and being less impressed by one’s own certainty.', href: 'https://medium.com/@antlerboy/why-i-was-wrong-to-call-john-seddon-you-old-bastard-even-though-he-probably-deserved-it-1e80989c9eff' },
@@ -116,15 +123,6 @@
   const rabbitNote = document.getElementById('rabbit-note');
   const rabbitOpen = document.getElementById('rabbit-open');
   let lastRabbit = -1;
-
-  function randomIndex(max) {
-    if (window.crypto && window.crypto.getRandomValues) {
-      const bucket = new Uint32Array(1);
-      window.crypto.getRandomValues(bucket);
-      return bucket[0] % max;
-    }
-    return Math.floor(Math.random() * max);
-  }
 
   function surprise() {
     let next = randomIndex(rabbitItems.length);
@@ -155,10 +153,5 @@
     dialog.addEventListener('click', event => {
       if (event.target === dialog) dialog.close();
     });
-  });
-  document.addEventListener('keydown', event => {
-    if (!galleryDialog || !galleryDialog.open) return;
-    if (event.key === 'ArrowLeft') moveGallery(-1);
-    if (event.key === 'ArrowRight') moveGallery(1);
   });
 })();
