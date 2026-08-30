@@ -2,26 +2,12 @@
   "updated": "2026-08-30",
   "redirects": [
     {
-      "legacy": "https://antlerboy.com/library/systems-convening/",
-      "target": "https://antlerboy.com/library/systems-leadership-change-practice/"
+      "from": "/library/systems-convening/",
+      "to": "/library/systems-leadership-change-practice/"
     },
     {
-      "legacy": "https://link.redquadrant.com/largegroupprocesses",
-      "target": "https://antlerboy.github.io/largegroupprocess/"
-    },
-    {
-      "legacy": "https://link.redquadrant.com/systemscomplexitycyberneticsreading",
-      "target": "https://antlerboy.com/library/reading/"
-    },
-    {
-      "legacy": "https://link.redquadrant.com/relationalpublicservicesposts",
-      "target": "https://antlerboy.com/library/relational-public-services/"
+      "from": "/library/visual-and-social-publications/",
+      "to": "/library/publications/"
     }
-  ],
-  "retain_institutional": [
-    "https://link.redquadrant.com/commissioningcompass",
-    "https://link.redquadrant.com/smartCompass",
-    "https://link.redquadrant.com/compassv2beta"
-  ],
-  "note": "Actual short-link changes require access to the short-link service."
+  ]
 }
