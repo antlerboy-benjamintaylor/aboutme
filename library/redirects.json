@@ -1,33 +1,27 @@
 {
   "updated": "2026-08-30",
-  "purpose": "Migration plan for legacy short links. Canonical antlerboy pages describe bodies of work; institutional tools remain with their institutional owners.",
-  "redirect_to_antlerboy": [
-    {"legacy": "https://link.redquadrant.com/systemscomplexitycyberneticsreading", "target": "https://antlerboy.com/library/reading/"},
-    {"legacy": "https://link.redquadrant.com/relationalpublicservicesposts", "target": "https://antlerboy.com/library/relational-public-services/"},
-    {"legacy": "https://link.redquadrant.com/5corepracticeschallenge", "target": "https://antlerboy.com/library/five-core-practices/"},
-    {"legacy": "https://link.redquadrant.com/dynamics-isss", "target": "https://antlerboy.com/library/four-dynamics/"},
-    {"legacy": "bitly:fourquadrantsofthinkingthreat", "target": "https://antlerboy.com/library/four-quadrants/"},
-    {"legacy": "bitly:SystemsConvening", "target": "https://antlerboy.com/library/systems-convening/"}
+  "redirects": [
+    {
+      "legacy": "https://antlerboy.com/library/systems-convening/",
+      "target": "https://antlerboy.com/library/systems-leadership-change-practice/"
+    },
+    {
+      "legacy": "https://link.redquadrant.com/largegroupprocesses",
+      "target": "https://antlerboy.github.io/largegroupprocess/"
+    },
+    {
+      "legacy": "https://link.redquadrant.com/systemscomplexitycyberneticsreading",
+      "target": "https://antlerboy.com/library/reading/"
+    },
+    {
+      "legacy": "https://link.redquadrant.com/relationalpublicservicesposts",
+      "target": "https://antlerboy.com/library/relational-public-services/"
+    }
   ],
-  "retain_institutional_destination": [
-    {"legacy": "https://link.redquadrant.com/commissioningcompass", "reason": "Current PSTA/RedQuadrant tool"},
-    {"legacy": "https://link.redquadrant.com/smartCompass", "reason": "Current PSTA/RedQuadrant tool"},
-    {"legacy": "https://link.redquadrant.com/compassv2beta", "reason": "PSTA/RedQuadrant tool"},
-    {"legacy": "https://link.redquadrant.com/nextacademy25", "reason": "PSTA programme route"},
-    {"legacy": "https://link.redquadrant.com/nextacademy26", "reason": "PSTA programme route"},
-    {"legacy": "https://link.redquadrant.com/apprenticeshipinfo", "reason": "Programme route"},
-    {"legacy": "https://link.redquadrant.com/PSTAWebinarJuly26", "reason": "PSTA event route"}
+  "retain_institutional": [
+    "https://link.redquadrant.com/commissioningcompass",
+    "https://link.redquadrant.com/smartCompass",
+    "https://link.redquadrant.com/compassv2beta"
   ],
-  "retain_legacy": [
-    {"legacy": "bitly:rentalboy", "reason": "@antlerboy origin story"},
-    {"legacy": "bitly:antlerboygroups", "reason": "Groups/community directory"}
-  ],
-  "review_before_redirect": [
-    "bitly:RQtoolshedshowandtell",
-    "bitly:systems3board",
-    "bitly:systems3files",
-    "bitly:thetrianglegame",
-    "bitly:SCBookLaunch",
-    "bitly:mv-redquadrant"
-  ]
+  "note": "Actual short-link changes require access to the short-link service."
 }

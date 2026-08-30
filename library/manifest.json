@@ -1,75 +1,1609 @@
 {
   "title": "Benjamin P Taylor public work library",
-  "version": "2026-08-30",
-  "principle": "Canonical pages describe an idea or body of practice; files are editions and evidence beneath them.",
+  "version": "2026-08-30.2",
+  "principle": "Canonical pages describe bodies of work. Historical sessions and stream-native publications have their own indexes. Public sharing alone does not determine publication status.",
   "concepts": [
-    {"slug":"core-systems-thinking","title":"Core systems thinking","tags":["systems","theory"],"status":"publish"},
-    {"slug":"cybernetics-is-not-the-banana","title":"Cybernetics is not the banana","tags":["cybernetics","practice"],"status":"publish"},
-    {"slug":"viable-system-model","title":"Viable System Model","tags":["cybernetics","organisation","vsm"],"status":"publish"},
-    {"slug":"systems-leadership-change-practice","title":"Systems leadership, change, theory and practice","tags":["systems","leadership","change"],"status":"publish"},
-    {"slug":"systems-convening","title":"Systems convening","tags":["systems","convening","practice"],"status":"publish"},
-    {"slug":"four-dynamics","title":"Four dynamics and robust systems","tags":["organisation","cybernetics","oshry"],"status":"publish"},
-    {"slug":"four-quadrants","title":"Four quadrants of thinking threats","tags":["systems","thinking"],"status":"publish"},
-    {"slug":"five-core-practices","title":"Five core leadership practices","tags":["leadership","practice"],"status":"publish"},
-    {"slug":"metacontextuality","title":"Metacontextuality and Bongard games","tags":["systems","epistemology","method"],"status":"publish"},
-    {"slug":"productive-conversations","title":"Productive conversations","tags":["practice","conversation","learning"],"status":"publish"},
-    {"slug":"outcomes-and-complexity","title":"Outcomes and complexity","tags":["public-services","outcomes","complexity"],"status":"publish"},
-    {"slug":"commissioning","title":"Commissioning and the Commissioning Compass","tags":["public-services","commissioning","tools"],"status":"publish","legacy_urls":["https://link.redquadrant.com/commissioningcompass","https://link.redquadrant.com/smartCompass"]},
-    {"slug":"relational-public-services","title":"Relational public services","tags":["public-services","relationships","outcomes"],"status":"publish","legacy_urls":["https://link.redquadrant.com/relationalpublicservicesposts"]},
-    {"slug":"facilitation-and-systems-consulting","title":"Facilitation and systems consulting","tags":["practice","facilitation","consulting"],"status":"publish"},
-    {"slug":"vecit","title":"VECIT and change","tags":["change","tools","practice"],"status":"publish"},
-    {"slug":"outsourcing","title":"How outsourcing can fail","tags":["public-services","commissioning","outsourcing"],"status":"publish"},
-    {"slug":"reading","title":"Systems, complexity and cybernetics reading","tags":["systems","reading"],"status":"publish","legacy_urls":["https://link.redquadrant.com/systemscomplexitycyberneticsreading"]}
+    {
+      "slug": "cybernetics-is-not-the-banana",
+      "title": "Cybernetics is not the banana",
+      "tags": [
+        "systems",
+        "practice"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "viable-system-model",
+      "title": "Viable System Model",
+      "tags": [
+        "systems",
+        "organisation"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "systems-leadership-change-practice",
+      "title": "Systems leadership, change and convening",
+      "tags": [
+        "systems",
+        "leadership",
+        "practice"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "four-dynamics",
+      "title": "Four dynamics and robust systems",
+      "tags": [
+        "systems",
+        "organisation"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "four-quadrants",
+      "title": "Four quadrants of thinking threats",
+      "tags": [
+        "systems",
+        "thinking"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "five-core-practices",
+      "title": "Five core leadership practices",
+      "tags": [
+        "leadership",
+        "practice"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "metacontextuality",
+      "title": "Metacontextuality and Bongard games",
+      "tags": [
+        "systems",
+        "thinking"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "productive-conversations",
+      "title": "Productive conversations",
+      "tags": [
+        "practice",
+        "leadership"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "outcomes-and-complexity",
+      "title": "Outcomes and complexity",
+      "tags": [
+        "public-services",
+        "systems"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "commissioning",
+      "title": "The Commissioning Compass",
+      "tags": [
+        "public-services",
+        "tools"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "relational-public-services",
+      "title": "Relational public services",
+      "tags": [
+        "public-services",
+        "practice"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "facilitation-and-systems-consulting",
+      "title": "Facilitation and systems consulting",
+      "tags": [
+        "practice",
+        "systems"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "large-group-processes",
+      "title": "Large-group processes",
+      "tags": [
+        "practice",
+        "tools"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "vecit",
+      "title": "VECIT and change",
+      "tags": [
+        "practice",
+        "tools"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "john-seddon-method",
+      "title": "The John Seddon Method",
+      "tags": [
+        "public-services",
+        "practice"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "outsourcing",
+      "title": "How outsourcing can fail",
+      "tags": [
+        "public-services",
+        "practice"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "public-service-transformation",
+      "title": "Public-service transformation",
+      "tags": [
+        "public-services",
+        "leadership"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "reading",
+      "title": "Systems, complexity and cybernetics reading",
+      "tags": [
+        "systems",
+        "reading"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "talks-and-sessions",
+      "title": "Talks, workshops and conference sessions",
+      "tags": [
+        "archive",
+        "practice"
+      ],
+      "status": "publish"
+    },
+    {
+      "slug": "visual-and-social-publications",
+      "title": "Visual and social publications",
+      "tags": [
+        "archive",
+        "writing"
+      ],
+      "status": "publish"
+    }
   ],
   "resources": [
-    {"concept":"core-systems-thinking","title":"What Are the Problems with Systems Thinking? Analysis","year":2026,"format":"pdf","url":"https://www.dropbox.com/scl/fi/a9mwabbqc16sid7p9bmw/What-Are-the-Problems-with-Systems-Thinking_-Analysis.pdf?rlkey=8klvqbvmdp8p1fkd15mw7kg8t&dl=0","rights":"own/curated analysis"},
-    {"concept":"core-systems-thinking","title":"Progress of Systems Thinking in the UK (2011–2025)","year":2026,"format":"pdf","url":"https://www.dropbox.com/scl/fi/r1bvmgkptvs76ec15wmz2/Progress-of-Systems-Thinking-in-the-UK-2011-2025.pdf?rlkey=vl45qj6e94wk2d11mw01gupwx&dl=0","rights":"own/curated analysis"},
-    {"concept":"core-systems-thinking","title":"SCiO systems laws v0.2","year":2019,"format":"pdf","url":"https://www.dropbox.com/scl/fi/wvgkh1uyr6zoel2mvn7cd/SCiO-systems-laws-v0.2.pdf?rlkey=gn2vanjwyjonz21ya9iu5dopc&dl=0","rights":"shared professional material"},
-    {"concept":"cybernetics-is-not-the-banana","title":"Cybernetics is not the banana — a story of practice transfer","year":2021,"format":"pdf","url":"https://www.dropbox.com/scl/fi/4w3c7i5e8hmzibiuosnmb/2021-08-01-Benjamin-Taylor-for-OR63-Cybernetics-is-not-the-banana-a-story-of-practice-transfer-in-public-service-transformation-consultancy-v1.8BT.pdf?rlkey=hswugiqmfwtgrvzgedx082tt5&dl=0","rights":"own"},
-    {"concept":"viable-system-model","title":"Benjamin Taylor VSM lecture","year":2025,"format":"pdf","url":"https://www.dropbox.com/scl/fi/cxz49dj4bfgblxw3103u5/2025-05-10-Benjamin-Taylor-VSM-lecture-v0.1BT.pdf?rlkey=o3915ucwi8wavv7rf257kxvlu&dl=0","rights":"own"},
-    {"concept":"viable-system-model","title":"Viable systems model — overviews and introductions","year":2020,"format":"zip","url":"https://www.dropbox.com/scl/fi/zfhw84bgkrd13d6chi1j2/Viable-systems-model-overviews-and-introductions.zip?rlkey=i1yh7jteoi4eqhqc85o430gcb&dl=0","rights":"mixed; review individual contents before redistribution"},
-    {"concept":"viable-system-model","title":"Viable systems organisation archetypes from SCiO","year":2019,"format":"pdf","url":"https://www.dropbox.com/scl/fi/baaom5kr8izvpgxsar8x9/Viable-systems-organisation-archetypes-from-SCiO.pdf?rlkey=divjlg0qt10mius5wd46ydick&dl=0","rights":"shared professional material"},
-    {"concept":"viable-system-model","title":"Viable systems model for governance","year":2017,"format":"pdf","url":"https://www.dropbox.com/scl/fi/5d7842qqa4acodfj2sg75/2017-07-11-viable-systems-model-for-governance-v0.2BT.pdf?rlkey=54zaq3iweiyqagoa7v3mdzzp6&dl=0","rights":"own"},
-    {"concept":"systems-leadership-change-practice","title":"Systems Leadership, Change, Theory and Practice — OU systems community","year":2023,"format":"pdf","url":"https://www.dropbox.com/scl/fi/bmng5qcqxwie1mojxnuj8/2023-06-28-Benjamin-Taylor-for-OU-systems-community-Systems-Leadership-Change-Theory-and-Practice-v0.6BT.pdf?rlkey=ygyopazm2jijrg3k0ax3krrt9&dl=0","rights":"own"},
-    {"concept":"systems-leadership-change-practice","title":"Systems Leadership, Change, Theory and Practice — SCiO","year":2022,"format":"pdf","url":"https://www.dropbox.com/scl/fi/gwx4hma8vw7cmixgx069y/2022-07-11-Benjamin-Taylor-at-SCiO-Systems-Leadership-Change-Theory-and-Practice-v0.4BT.pdf?rlkey=cssx06tl5dzjdn761z8xx91bl&dl=0","rights":"own"},
-    {"concept":"systems-convening","title":"Systems convening, systems practice, systems theory","year":2022,"format":"pdf","url":"https://www.dropbox.com/scl/fi/d38g20o5y801fcu74vl1v/2022-06-13-systems-convening-systems-practice-systems-theory-v0.6DM-with-notes.pdf?rlkey=jj99ek5balfhotcmjnbv73sgg&dl=0","rights":"own/co-created"},
-    {"concept":"systems-convening","title":"Systems convening public folder","year":2022,"format":"folder","url":"https://www.dropbox.com/scl/fo/4hs8l98k790ci2qizlr3q/AM1dLNakFp8WzPmGHvAlxwo?rlkey=9qam6r9dp7os640591y0o9bvy&dl=0","rights":"mixed; review individual contents"},
-    {"concept":"four-dynamics","title":"Positive dynamics of differentiation and integration","year":2024,"format":"pdf","url":"https://www.dropbox.com/scl/fi/2rfjzqy5k6ch21rsu663y/2024-10-29-Benjamin-P-Taylor-How-can-we-engage-positive-dynamics-of-differentiation-and-integration-in-developing-systems-cybernetics-complexity.pdf?rlkey=ei1iqlpucqkq3ghdphr0v5y1f&dl=0","rights":"own"},
-    {"concept":"four-dynamics","title":"Four things to create a robust system — Oshry and Beer","year":2019,"format":"pdf","url":"https://www.dropbox.com/scl/fi/uxua69031w3wx3tm2j6ne/four-things-to-create-a-robust-system-Oshry-and-Beer.pdf?rlkey=hh98jdw2gpxvnmt5h46wxnqmp&dl=0","rights":"own synthesis"},
-    {"concept":"four-dynamics","title":"Robust systems and the viability principle","year":2017,"format":"pdf","url":"https://www.dropbox.com/scl/fi/ugs8tkym3sf1gabclx9ym/robust-systems-and-the-viability-principle.pdf?rlkey=bbadeijwc3lvrrthgekobsqj6&dl=0","rights":"own"},
-    {"concept":"four-quadrants","title":"Four quadrants of systems thinking threats v2.1","year":2019,"format":"pdf","url":"https://www.dropbox.com/scl/fi/zdziaargk5l9rdkseuxlo/2019-04-15-four-quadrants-of-systems-thinking-threats-v2.1BT.pdf?rlkey=5u09vxjpaoy582cfds26ebnvs&dl=0","rights":"own"},
-    {"concept":"four-quadrants","title":"The four quadrants of thinking threats — SCiO open event","year":2021,"format":"video","url":"https://www.dropbox.com/scl/fi/0pg49y3vkfqi1ou1mi1cu/Benjamin-Taylor-Jan-2021-SCiO-Open-Event-The-four-quadrants-of-thinking-threats.mp4?rlkey=06ecot7tfjlj0r56lhsyu6gqk&dl=0","rights":"own/event recording"},
-    {"concept":"five-core-practices","title":"Five core leadership practices — extended, with reading recommendations","year":2022,"format":"pdf","url":"https://www.dropbox.com/scl/fi/mumd3h20uux050a6noe7q/2022-11-28-Benjamin-Taylor-five-core-leadership-practices-for-Stretchcon-extended-with-reading-recommendations.pdf?rlkey=zc8jzlmbelk81jn1xxaw1y80c&dl=0","rights":"own"},
-    {"concept":"five-core-practices","title":"Five core leadership practices for LinkedIn","year":2021,"format":"pdf","url":"https://www.dropbox.com/scl/fi/dojeq5hdnlcezbieuhn3c/Benjamin-Taylor-five-core-leadership-practices-for-linkedin.pdf?rlkey=bnv58vc15zll8rli72i7x8yhl&dl=0","rights":"own"},
-    {"concept":"metacontextuality","title":"Metacontextuality, Bongard games, and the limits of method","year":2026,"format":"pdf","url":"https://www.dropbox.com/scl/fi/myvgb4r6t6dnid8hb9cux/Metacontextuality-Bongard-games-and-the-limits-of-method-Benjamin-Taylor.pdf?rlkey=bdhr5wuyu1pl9n09fqs703ywj&dl=0","rights":"own"},
-    {"concept":"metacontextuality","title":"Metacontextuality through the medium of Bongard games","year":2026,"format":"video","url":"https://www.dropbox.com/scl/fi/v73i950r66ckry5n6c5oa/Benjamin-Taylor-Meta-contextuality-through-the-medium-of-Bongard-games.mp4?rlkey=g09cs8yeate2cmd32y817a3wz&dl=0","rights":"own/event recording"},
-    {"concept":"metacontextuality","title":"Metacontextuality and Bongard games v1.1","year":2017,"format":"pdf","url":"https://www.dropbox.com/scl/fi/bnm9eusb668l21htypchj/2017-10-16-Metacontextuality-and-bongard-games-v1.1BT-for-circulation.pdf?rlkey=y6n33wekyzy28z81jh2q7u6bi&dl=0","rights":"own"},
-    {"concept":"productive-conversations","title":"Productive conversations — SCiO","year":2024,"format":"pdf","url":"https://www.dropbox.com/scl/fi/ztetuy2oydh3va0c4u5zm/2024-111-20-SCiO-Benjamin-P-Taylor-productive-conversations-v1.2.pdf?rlkey=69mwjlj2yyr6nc0hkl9aral3m&dl=0","rights":"own"},
-    {"concept":"productive-conversations","title":"The Left-Hand Column exercise","year":2021,"format":"pdf","url":"https://www.dropbox.com/scl/fi/pi2on6gywe0k61w9r3hp5/2021-02-17-RedQuadrant-the-Left-Hand-Column-exercise.pdf?rlkey=z542btrygdabkb2pdfpq2u9dr&dl=0","rights":"own adaptation/teaching material"},
-    {"concept":"productive-conversations","title":"Conversation menu","year":2025,"format":"pdf","url":"https://www.dropbox.com/scl/fi/e0p1wx7gwn2sjdlpyldx7/conversation-menu.pdf?rlkey=chybwujhi9tfiogli5ppyn9oo&dl=0","rights":"own"},
-    {"concept":"outcomes-and-complexity","title":"Outcomes thinking, with Benjamin Taylor for LGE","year":2022,"format":"video","url":"https://www.dropbox.com/scl/fi/0xfike9t4l078sg7r4r8z/Outcomes-thinking-with-Benjamin-Taylor-for-LGE.mp4?rlkey=sb9sybgi09gqqdcpe51iuk794&dl=0","rights":"own/event recording"},
-    {"concept":"outcomes-and-complexity","title":"Services are Bad for People","year":2020,"format":"pdf","url":"https://www.dropbox.com/scl/fi/r0op4g75be9350unvwh0v/Services-are-Bad-for-People.pdf?rlkey=01yzygyrk1xfug1acyiodavua&dl=0","rights":"own"},
-    {"concept":"commissioning","title":"The Commissioning Compass","year":2026,"format":"tool","url":"https://link.redquadrant.com/commissioningcompass","rights":"PSTA/RedQuadrant"},
-    {"concept":"commissioning","title":"smartCompass","year":2026,"format":"tool","url":"https://link.redquadrant.com/smartCompass","rights":"PSTA/RedQuadrant"},
-    {"concept":"commissioning","title":"The commissioning compass — visual","year":2026,"format":"image","url":"https://www.dropbox.com/scl/fi/wnd4jfmg28itmh8ptx2rh/the-commissioning-compass.png?rlkey=u7p2ptayo5w5gpzv23llpefz9&dl=0","rights":"PSTA/RedQuadrant"},
-    {"concept":"commissioning","title":"Commissioning infographic","year":2021,"format":"pdf","url":"https://www.dropbox.com/scl/fi/mmcqpewdddb7t86lnda1v/commissioning-infographic.pdf?rlkey=t6kkns96z7qxxw498h16d0z5i&dl=0","rights":"PSTA/RedQuadrant"},
-    {"concept":"commissioning","title":"Identity of commissioning — King's Fund event","year":2024,"format":"pdf","url":"https://www.dropbox.com/scl/fi/k2afeoaakvjioxkbdathh/2024-10-31-Benjamin-Taylor-slides-for-King-s-Fun-identity-of-commissioning-event.pdf?rlkey=i52xgvwdcphypulovt5dxofo1&dl=0","rights":"own"},
-    {"concept":"relational-public-services","title":"Collection of posts on relational public services","year":2026,"format":"web","url":"https://chosen-path.org/2026/03/21/collection-of-posts-on-relational-public-services/","rights":"own"},
-    {"concept":"relational-public-services","title":"Why do relational public services fail? — TRIP26","year":2026,"format":"pdf","url":"https://www.dropbox.com/scl/fi/2fupfdismqxnr5glp7l0i/2026-06-25-TRIP26-Benjamin-Taylor-why-do-relational-public-services-fail-v1.0BT.pdf?rlkey=bminwqzpruwghaukmsq0t86f6&dl=0","rights":"own"},
-    {"concept":"relational-public-services","title":"Relational public services","year":2025,"format":"pdf","url":"https://www.dropbox.com/scl/fi/sciz55dmueb5ezfyv1wgt/2025-10-26-relational-public-services.pdf?rlkey=jn6cicbsabv3bogj6kfzfs79g&dl=0","rights":"own"},
-    {"concept":"facilitation-and-systems-consulting","title":"Systems consulting and facilitation — STSP26","year":2026,"format":"pdf","url":"https://www.dropbox.com/scl/fi/ca3lalnnjdkt06rx39nm6/2026-03-24-STSP26-systems-conulting-and-facilitation-Benjamin-P-Taylor.pdf?rlkey=u5txcu880d7ht4ceu8ognmu7z&dl=0","rights":"own"},
-    {"concept":"facilitation-and-systems-consulting","title":"Systems practice is a humanism — STSP26","year":2026,"format":"pdf","url":"https://www.dropbox.com/scl/fi/n0egk8yt4fvu9fqbud4kj/Benjamin-P-Taylor-at-STSP26-systems-practice-is-a-humanism.pdf?rlkey=rahzsmimaa6z1qn4d4haci2gp&dl=0","rights":"own"},
-    {"concept":"facilitation-and-systems-consulting","title":"Design of workshops for systems practice interventions","year":2023,"format":"pdf","url":"https://www.dropbox.com/scl/fi/c1uzmyxg2s0upzjgp59vd/2023-09-07-CS-SCiO-Benjamin-Taylor-design-of-workshops-for-systems-practice-interventiosn-ESS-v1.5BT.pdf?rlkey=a0rjy1joc6zmbs7k8mzxpzpok&dl=0","rights":"own"},
-    {"concept":"facilitation-and-systems-consulting","title":"The Peter Block community exercise","year":2020,"format":"pdf","url":"https://www.dropbox.com/scl/fi/pd58brghxfzi7hmcjpq5e/The-Peter-Block-community-exercise.pdf?rlkey=effn2ww7mw5jak96bg43zazga&dl=0","rights":"own adaptation/teaching material"},
-    {"concept":"vecit","title":"VECIT change model","year":2021,"format":"pdf","url":"https://www.dropbox.com/scl/fi/pefnbq25tn11v3kefh0t9/VECIT-change-model.pdf?rlkey=092wmbm1wdto8nzgwc18kmq64&dl=0","rights":"own"},
-    {"concept":"vecit","title":"How to help your change succeed with VECIT","year":2021,"format":"pdf","url":"https://www.dropbox.com/scl/fi/a0c1ryw6dp6efyso8tcpa/2021-07-15-How-to-help-your-change-succeed-with-VECIT-v03BT.pdf?rlkey=kxwcpef0gjhalil1avihvgiub&dl=0","rights":"own"},
-    {"concept":"vecit","title":"RedQuadrant and VECIT change","year":2016,"format":"pdf","url":"https://www.dropbox.com/scl/fi/92gvoxp8lwduifq0pxdil/2016-12-05-RedQuadrant-and-VECIT-change-v0.6BT.pdf?rlkey=japa1wl6n1vw8n9otuerg71i0&dl=0","rights":"own"},
-    {"concept":"outsourcing","title":"How outsourcing can fail and how to fix it","year":2026,"format":"pdf","url":"https://www.dropbox.com/scl/fi/mkbd6a3h73rgqjic4okj2/how-outsourcing-can-fail-and-how-to-fix-it.pdf?rlkey=viyztdrpk8qkdrqn7xedvxlu1&dl=0","rights":"RedQuadrant"},
-    {"concept":"outsourcing","title":"How outsourcing can fail — full paper","year":2017,"format":"pdf","url":"https://www.dropbox.com/scl/fi/xu7zn4scuf0bomo5x2erm/RedQuadrant-how-outsourcing-can-fail-full-paper.pdf?rlkey=ruc9sz38oxoii4u6knp953xs6&dl=0","rights":"RedQuadrant"},
-    {"concept":"outsourcing","title":"How outsourcing can fail — summary and checklist","year":2017,"format":"pdf","url":"https://www.dropbox.com/scl/fi/gonf8dxlm1mxlijvqmmdp/RedQuadrant-how-outsourcing-can-fail-summary-and-checklist.pdf?rlkey=2zxl1gz2bjo8glg10zdddr3v5&dl=0","rights":"RedQuadrant"},
-    {"concept":"reading","title":"Current systems | complexity | cybernetics reading route","year":2026,"format":"web","url":"https://link.redquadrant.com/systemscomplexitycyberneticsreading","rights":"own curation"},
-    {"concept":"reading","title":"Rough draft systems thinking reading list v1.1","year":2024,"format":"pdf","url":"https://www.dropbox.com/scl/fi/85zlt0t6ph8qarx7d7gic/2024-09-27-rough-draft-systems-thinking-reading-list-v1.1BT.pdf?rlkey=3rfavacsy4n6sl8j0pyedph1q&dl=0","rights":"own curation"},
-    {"concept":"reading","title":"RedQuadrant radical reading list","year":2022,"format":"pdf","url":"https://www.dropbox.com/scl/fi/z487rt3xljlmvx98vv89o/2022-06-23-RedQuadrant-radical-reading-list-v0.2BT.pdf?rlkey=2bg6aep9bt7qtyshs0wga69b4&dl=0","rights":"own curation"},
-    {"concept":"reading","title":"Taylor's miscellany of systems thinking","year":2018,"format":"pdf","url":"https://www.dropbox.com/scl/fi/bdkuk1nb83nrzq8fwgkw4/Taylor-s-miscellany-of-systems-thinking-includes-Clemson-s-22-principles-laws-and-theorems.pdf?rlkey=abiz7cuhchu371mtbvgkco6kn&dl=0","rights":"own compilation; underlying attributions apply"}
-  ]
+    {
+      "concept": "cybernetics-is-not-the-banana",
+      "title": "Cybernetics is not the banana — a story of practice transfer",
+      "year": 2021,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/4w3c7i5e8hmzibiuosnmb/2021-08-01-Benjamin-Taylor-for-OR63-Cybernetics-is-not-the-banana-a-story-of-practice-transfer-in-public-service-transformation-consultancy-v1.8BT.pdf?rlkey=hswugiqmfwtgrvzgedx082tt5&dl=0",
+      "description": "The OR63 presentation, with the full public-service practice-transfer argument.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "viable-system-model",
+      "title": "Benjamin Taylor VSM lecture",
+      "year": 2025,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/cxz49dj4bfgblxw3103u5/2025-05-10-Benjamin-Taylor-VSM-lecture-v0.1BT.pdf?rlkey=o3915ucwi8wavv7rf257kxvlu&dl=0",
+      "description": "The current core lecture.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "systems-leadership-change-practice",
+      "title": "Systems Leadership, Change, Theory and Practice — OU systems community",
+      "year": 2023,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/bmng5qcqxwie1mojxnuj8/2023-06-28-Benjamin-Taylor-for-OU-systems-community-Systems-Leadership-Change-Theory-and-Practice-v0.6BT.pdf?rlkey=ygyopazm2jijrg3k0ax3krrt9&dl=0",
+      "description": "The most developed public presentation in this sequence.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "systems-leadership-change-practice",
+      "title": "Systems Leadership, Change, Theory and Practice — SCiO",
+      "year": 2022,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/gwx4hma8vw7cmixgx069y/2022-07-11-Benjamin-Taylor-at-SCiO-Systems-Leadership-Change-Theory-and-Practice-v0.4BT.pdf?rlkey=cssx06tl5dzjdn761z8xx91bl&dl=0",
+      "description": "An earlier version for the systems-practice community.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "systems-leadership-change-practice",
+      "title": "Systems convening, systems practice, systems theory",
+      "year": 2022,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/d38g20o5y801fcu74vl1v/2022-06-13-systems-convening-systems-practice-systems-theory-v0.6DM-with-notes.pdf?rlkey=jj99ek5balfhotcmjnbv73sgg&dl=0",
+      "description": "The convening material, now kept in its proper relationship with leadership and change.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "systems-leadership-change-practice",
+      "title": "Systems convening shared folder",
+      "year": 2022,
+      "format": "Dropbox folder",
+      "url": "https://www.dropbox.com/scl/fo/4hs8l98k790ci2qizlr3q/AM1dLNakFp8WzPmGHvAlxwo?rlkey=9qam6r9dp7os640591y0o9bvy&dl=0",
+      "description": "Supporting material. Mixed authorship and rights; use the original sources where possible.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "four-dynamics",
+      "title": "Positive dynamics of differentiation and integration — ISSS",
+      "year": 2024,
+      "format": "Web route",
+      "url": "https://link.redquadrant.com/dynamics-isss",
+      "description": "The single retained route for this body of work.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "four-quadrants",
+      "title": "Four quadrants of systems thinking threats v2.1",
+      "year": 2019,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/zdziaargk5l9rdkseuxlo/2019-04-15-four-quadrants-of-systems-thinking-threats-v2.1BT.pdf?rlkey=5u09vxjpaoy582cfds26ebnvs&dl=0",
+      "description": "The developed presentation.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "four-quadrants",
+      "title": "The four quadrants of thinking threats — SCiO open event",
+      "year": 2021,
+      "format": "Video",
+      "url": "https://www.dropbox.com/scl/fi/0pg49y3vkfqi1ou1mi1cu/Benjamin-Taylor-Jan-2021-SCiO-Open-Event-The-four-quadrants-of-thinking-threats.mp4?rlkey=06ecot7tfjlj0r56lhsyu6gqk&dl=0",
+      "description": "Recorded session.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "four-quadrants",
+      "title": "Four quadrants of systems thinking threats v0.1",
+      "year": 2017,
+      "format": "PowerPoint",
+      "url": "https://www.dropbox.com/scl/fi/uj5i93iuqi8qvizww1ywn/2017-09-09-four-quadrants-of-systems-thinking-threats-v0.1BT.pptx?rlkey=s4lzulc832qqg0b6lgt71ezee&dl=0",
+      "description": "Early version, retained as provenance.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "five-core-practices",
+      "title": "Five core leadership practices — extended, with reading recommendations",
+      "year": 2022,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/mumd3h20uux050a6noe7q/2022-11-28-Benjamin-Taylor-five-core-leadership-practices-for-Stretchcon-extended-with-reading-recommendations.pdf?rlkey=zc8jzlmbelk81jn1xxaw1y80c&dl=0",
+      "description": "The fuller teaching deck.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "five-core-practices",
+      "title": "Five core leadership practices for LinkedIn",
+      "year": 2021,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/dojeq5hdnlcezbieuhn3c/Benjamin-Taylor-five-core-leadership-practices-for-linkedin.pdf?rlkey=bnv58vc15zll8rli72i7x8yhl&dl=0",
+      "description": "The compact visual version.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "five-core-practices",
+      "title": "Crisis, total football, human needs and five core practices",
+      "year": 2020,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/ml6vja0ezhpcq97czu69q/2020-06-19-Benjamin-Taylor-crisis-total-football-and-human-needs-human-and-organisational-needs-and-five-core-practices-v1.0BT-for-RA.pdf?rlkey=gdoa6ori3bfwxf1o9jdrkiimy&dl=0",
+      "description": "An earlier application under pressure.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "metacontextuality",
+      "title": "Metacontextuality, Bongard games, and the limits of method",
+      "year": 2026,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/myvgb4r6t6dnid8hb9cux/Metacontextuality-Bongard-games-and-the-limits-of-method-Benjamin-Taylor.pdf?rlkey=bdhr5wuyu1pl9n09fqs703ywj&dl=0",
+      "description": "Current paper.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "metacontextuality",
+      "title": "Metacontextuality through the medium of Bongard games",
+      "year": 2026,
+      "format": "Video",
+      "url": "https://www.dropbox.com/scl/fi/v73i950r66ckry5n6c5oa/Benjamin-Taylor-Meta-contextuality-through-the-medium-of-Bongard-games.mp4?rlkey=g09cs8yeate2cmd32y817a3wz&dl=0",
+      "description": "Recorded session.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "metacontextuality",
+      "title": "Metacontextuality and Bongard games v1.1",
+      "year": 2017,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/bnm9eusb668l21htypchj/2017-10-16-Metacontextuality-and-bongard-games-v1.1BT-for-circulation.pdf?rlkey=y6n33wekyzy28z81jh2q7u6bi&dl=0",
+      "description": "Original circulated presentation.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "productive-conversations",
+      "title": "Productive conversations — SCiO",
+      "year": 2024,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/ztetuy2oydh3va0c4u5zm/2024-111-20-SCiO-Benjamin-P-Taylor-productive-conversations-v1.2.pdf?rlkey=69mwjlj2yyr6nc0hkl9aral3m&dl=0",
+      "description": "Main presentation.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "productive-conversations",
+      "title": "The Left-Hand Column exercise",
+      "year": 2021,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/pi2on6gywe0k61w9r3hp5/2021-02-17-RedQuadrant-the-Left-Hand-Column-exercise.pdf?rlkey=z542btrygdabkb2pdfpq2u9dr&dl=0",
+      "description": "A practical exercise for noticing the gap between what is thought and what is said.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "outcomes-and-complexity",
+      "title": "Outcomes thinking, with Benjamin Taylor for LGE",
+      "year": 2022,
+      "format": "Video",
+      "url": "https://www.dropbox.com/scl/fi/0xfike9t4l078sg7r4r8z/Outcomes-thinking-with-Benjamin-Taylor-for-LGE.mp4?rlkey=sb9sybgi09gqqdcpe51iuk794&dl=0",
+      "description": "A recorded introduction to outcomes thinking.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "commissioning",
+      "title": "The Commissioning Compass",
+      "year": 2026,
+      "format": "Interactive tool",
+      "url": "https://link.redquadrant.com/commissioningcompass",
+      "description": "A structured systems assessment for commissioning and change.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "commissioning",
+      "title": "smartCompass",
+      "year": 2026,
+      "format": "Interactive tool",
+      "url": "https://link.redquadrant.com/smartCompass",
+      "description": "A quicker AI-supported first orientation.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "commissioning",
+      "title": "Compass v2.0 beta — commissioning as collective system learning",
+      "year": 2026,
+      "format": "Google Doc beta",
+      "url": "https://link.redquadrant.com/compassv2beta",
+      "description": "The place-based systems-change version. Shared for comment and testing.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "relational-public-services",
+      "title": "Collection of posts on relational public services",
+      "year": 2026,
+      "format": "Web",
+      "url": "https://chosen-path.org/2026/03/21/collection-of-posts-on-relational-public-services/",
+      "description": "A route through the developing argument.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "relational-public-services",
+      "title": "Why do relational public services fail? — TRIP26",
+      "year": 2026,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/2fupfdismqxnr5glp7l0i/2026-06-25-TRIP26-Benjamin-Taylor-why-do-relational-public-services-fail-v1.0BT.pdf?rlkey=bminwqzpruwghaukmsq0t86f6&dl=0",
+      "description": "Conference presentation.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "relational-public-services",
+      "title": "The ladder of relationality in public service",
+      "year": 2026,
+      "format": "Google document",
+      "url": "https://docs.google.com/document/d/1FewYqWndCJbjGYOlkWFZGBHxbs3AM4lA/edit?usp=sharing",
+      "description": "A working paper on degrees and conditions of relationality.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "relational-public-services",
+      "title": "Relational public services",
+      "year": 2025,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/sciz55dmueb5ezfyv1wgt/2025-10-26-relational-public-services.pdf?rlkey=jn6cicbsabv3bogj6kfzfs79g&dl=0",
+      "description": "Visual argument and earlier synthesis.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "facilitation-and-systems-consulting",
+      "title": "Systems consulting and facilitation — STSP26",
+      "year": 2026,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/ca3lalnnjdkt06rx39nm6/2026-03-24-STSP26-systems-conulting-and-facilitation-Benjamin-P-Taylor.pdf?rlkey=u5txcu880d7ht4ceu8ognmu7z&dl=0",
+      "description": "Current conference session.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "facilitation-and-systems-consulting",
+      "title": "Facilitation and workshop design for systems interventions — workbook",
+      "year": 2025,
+      "format": "Word document",
+      "url": "https://www.dropbox.com/scl/fi/c6umyiaegjofzzvsxx45a/2025-04-25-workbook-facilitation-and-workshop-design-for-systems-interventions.docx?rlkey=uukbtji7yzgicmwr8mmcto6it&dl=0",
+      "description": "Working material for applying the practice.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "facilitation-and-systems-consulting",
+      "title": "Design of workshops for systems practice interventions",
+      "year": 2023,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/c1uzmyxg2s0upzjgp59vd/2023-09-07-CS-SCiO-Benjamin-Taylor-design-of-workshops-for-systems-practice-interventiosn-ESS-v1.5BT.pdf?rlkey=a0rjy1joc6zmbs7k8mzxpzpok&dl=0",
+      "description": "Earlier teaching deck.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "facilitation-and-systems-consulting",
+      "title": "The Peter Block community exercise",
+      "year": 2020,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/pd58brghxfzi7hmcjpq5e/The-Peter-Block-community-exercise.pdf?rlkey=effn2ww7mw5jak96bg43zazga&dl=0",
+      "description": "A practical exercise adapted for this work.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "facilitation-and-systems-consulting",
+      "title": "Large-group processes collection",
+      "year": 2026,
+      "format": "Microsite",
+      "url": "https://antlerboy.github.io/largegroupprocess/",
+      "description": "A separate, searchable guide to the shared large-group methods collection.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "large-group-processes",
+      "title": "Large-group processes microsite",
+      "year": 2026,
+      "format": "Website",
+      "url": "https://antlerboy.github.io/largegroupprocess/",
+      "description": "Search methods, see every indexed file and use the mentor.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "large-group-processes",
+      "title": "Open the complete Dropbox collection",
+      "year": 2026,
+      "format": "Dropbox folder",
+      "url": "https://www.dropbox.com/scl/fo/in3pvj22abhuz1aznr42t/ADbXaiB5LCpdy1OcuBZ7pbs?rlkey=yyoqyaq03g5seg2svafdb2uum&dl=0",
+      "description": "The underlying shared folder.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "large-group-processes",
+      "title": "Interrogate the large-group-process mentor",
+      "year": 2026,
+      "format": "ChatGPT mentor",
+      "url": "https://link.redquadrant.com/ChatGPTlargegroupprocessmentor",
+      "description": "Ask about method selection, design, risks and adaptation.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "vecit",
+      "title": "VECIT change model",
+      "year": 2021,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/pefnbq25tn11v3kefh0t9/VECIT-change-model.pdf?rlkey=092wmbm1wdto8nzgwc18kmq64&dl=0",
+      "description": "Compact model.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "vecit",
+      "title": "How to help your change succeed with VECIT",
+      "year": 2021,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/a0c1ryw6dp6efyso8tcpa/2021-07-15-How-to-help-your-change-succeed-with-VECIT-v03BT.pdf?rlkey=kxwcpef0gjhalil1avihvgiub&dl=0",
+      "description": "Practical guide.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "vecit",
+      "title": "RedQuadrant and VECIT change",
+      "year": 2016,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/92gvoxp8lwduifq0pxdil/2016-12-05-RedQuadrant-and-VECIT-change-v0.6BT.pdf?rlkey=japa1wl6n1vw8n9otuerg71i0&dl=0",
+      "description": "Earlier presentation.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "john-seddon-method",
+      "title": "Action Learning and Practice — The John Seddon Method for public sector transformation",
+      "year": 2017,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/r4jtm2p2nqqjr3639ocbt/Action-Learning-and-Practice-The-John-Seddon-Method-for-public-sector-transformation-self-enlightenment-coercion-or-both.pdf?rlkey=k5mylvd0agkzybd005yu9uj2u&dl=0",
+      "description": "The paper that was wrongly omitted from the first catalogue.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "outsourcing",
+      "title": "How outsourcing can fail and how to fix it",
+      "year": 2026,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/mkbd6a3h73rgqjic4okj2/how-outsourcing-can-fail-and-how-to-fix-it.pdf?rlkey=viyztdrpk8qkdrqn7xedvxlu1&dl=0",
+      "description": "Current synthesis.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "outsourcing",
+      "title": "How outsourcing can fail — full paper",
+      "year": 2017,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/xu7zn4scuf0bomo5x2erm/RedQuadrant-how-outsourcing-can-fail-full-paper.pdf?rlkey=ruc9sz38oxoii4u6knp953xs6&dl=0",
+      "description": "Original full paper.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "outsourcing",
+      "title": "How outsourcing can fail — summary and checklist",
+      "year": 2017,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/gonf8dxlm1mxlijvqmmdp/RedQuadrant-how-outsourcing-can-fail-summary-and-checklist.pdf?rlkey=2zxl1gz2bjo8glg10zdddr3v5&dl=0",
+      "description": "Practical summary.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "public-service-transformation",
+      "title": "The Adaptive Council — LearnFest",
+      "year": 2021,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/rvuz44tvyfloh2786jvi8/Benjamin-Taylor-the-Public-Service-Transformation-Academy-the-Adaptive-Council-for-LearnFest-2021.pdf?rlkey=ohz6zsodrgkzf0iz7fyswrdpy&dl=0",
+      "description": "Presentation on the adaptive council model.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "public-service-transformation",
+      "title": "Learning community to build back better in the days after",
+      "year": 2021,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/8de89g6xqxttsq0xbktbf/2021-07-23-PSTA-learning-community-to-build-back-better-in-the-days-after-v1.0BT-with-notes.pdf?rlkey=ugl94iry1f77ui2wta560oyac&dl=0",
+      "description": "PSTA learning-community proposition.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "public-service-transformation",
+      "title": "The Adaptive Council model",
+      "year": 2020,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/97ws4kurk5iie4cffefn8/2020-11-18-the-Public-Service-Transformation-Academy-and-Redquadrant-the-adaptive-council-model-v0.2BT.pdf?rlkey=nflc0i3ee2lgbdcrhrmqv58dx&dl=0",
+      "description": "Earlier model.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "public-service-transformation",
+      "title": "Government After Shock — build back better in the days after",
+      "year": 2020,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/216k0v1876ocxco9oyutn/2020-11-17-government-after-shock-build-back-better-in-the-days-after-round-table-v1.1BT-with-notes.pdf?rlkey=7moc790jedpvr07bq5kx1i57f&dl=0",
+      "description": "Round-table material.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "public-service-transformation",
+      "title": "State of emergency — the RedQuadrant state of transformation shadow report",
+      "year": 2018,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/xq9aw3ywto22gmlkl8dwv/2018-State-of-emergency-the-RedQuadrant-state-of-transformation-shadow-report.pdf?rlkey=bh9iw09qz2bqgqafe1tx1crr8&dl=0",
+      "description": "A public critique of the state of transformation.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "reading",
+      "title": "Current systems | complexity | cybernetics reading route",
+      "year": 2026,
+      "format": "Web",
+      "url": "https://link.redquadrant.com/systemscomplexitycyberneticsreading",
+      "description": "Living list.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "reading",
+      "title": "Rough draft systems thinking reading list v1.1",
+      "year": 2024,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/85zlt0t6ph8qarx7d7gic/2024-09-27-rough-draft-systems-thinking-reading-list-v1.1BT.pdf?rlkey=3rfavacsy4n6sl8j0pyedph1q&dl=0",
+      "description": "Published working version.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "reading",
+      "title": "RedQuadrant radical reading list",
+      "year": 2022,
+      "format": "PDF",
+      "url": "https://www.dropbox.com/scl/fi/z487rt3xljlmvx98vv89o/2022-06-23-RedQuadrant-radical-reading-list-v0.2BT.pdf?rlkey=2bg6aep9bt7qtyshs0wga69b4&dl=0",
+      "description": "A wider public-service and transformation list.",
+      "rights": "own or organisational unless noted on page"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Why do relational public services fail? — TRIP26",
+      "year": 2026,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/2fupfdismqxnr5glp7l0i/2026-06-25-TRIP26-Benjamin-Taylor-why-do-relational-public-services-fail-v1.0BT.pdf?rlkey=bminwqzpruwghaukmsq0t86f6&dl=0",
+      "description": "Conference presentation.",
+      "tags": [
+        "public-services",
+        "relationships",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Systems consulting and facilitation — STSP26",
+      "year": 2026,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/ca3lalnnjdkt06rx39nm6/2026-03-24-STSP26-systems-conulting-and-facilitation-Benjamin-P-Taylor.pdf?rlkey=u5txcu880d7ht4ceu8ognmu7z&dl=0",
+      "description": "Conference session on consulting from inside the system.",
+      "tags": [
+        "systems",
+        "practice",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Systems practice is a humanism — STSP26",
+      "year": 2026,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/n0egk8yt4fvu9fqbud4kj/Benjamin-P-Taylor-at-STSP26-systems-practice-is-a-humanism.pdf?rlkey=rahzsmimaa6z1qn4d4haci2gp&dl=0",
+      "description": "Companion conference session.",
+      "tags": [
+        "systems",
+        "practice",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Benjamin Taylor VSM lecture",
+      "year": 2025,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/cxz49dj4bfgblxw3103u5/2025-05-10-Benjamin-Taylor-VSM-lecture-v0.1BT.pdf?rlkey=o3915ucwi8wavv7rf257kxvlu&dl=0",
+      "description": "Core VSM lecture.",
+      "tags": [
+        "systems",
+        "organisation",
+        "lecture"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Facilitation and workshop design for systems practice interventions",
+      "year": 2025,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fo/lvy8xblxsq2cf5b5ptw4g/ABo4r25LawlgFfjTggezTOU?rlkey=tglea53yd6b81otz6ly28fihz&dl=0&preview=large%20group%20processes%20documents%2F2025-12-12%20Benjamin%20Taylor%20-%20facilitation%20and%20workshop%20design%20for%20systems%20practice%20interventions%20v3.1BT%20as%20delivered.pdf",
+      "description": "The later large-group/facilitation deck in the shared collection.",
+      "tags": [
+        "practice",
+        "facilitation",
+        "workshop"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Identity of commissioning — King’s Fund event",
+      "year": 2024,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/k2afeoaakvjioxkbdathh/2024-10-31-Benjamin-Taylor-slides-for-King-s-Fun-identity-of-commissioning-event.pdf?rlkey=i52xgvwdcphypulovt5dxofo1&dl=0",
+      "description": "Event slides; retained here rather than on the current Compass page.",
+      "tags": [
+        "public-services",
+        "commissioning",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Positive dynamics of differentiation and integration",
+      "year": 2024,
+      "format": "session material",
+      "url": "https://link.redquadrant.com/dynamics-isss",
+      "description": "ISSS session route.",
+      "tags": [
+        "systems",
+        "organisation",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Productive conversations — SCiO",
+      "year": 2024,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/ztetuy2oydh3va0c4u5zm/2024-111-20-SCiO-Benjamin-P-Taylor-productive-conversations-v1.2.pdf?rlkey=69mwjlj2yyr6nc0hkl9aral3m&dl=0",
+      "description": "Public systems-practice session.",
+      "tags": [
+        "practice",
+        "leadership",
+        "workshop"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Transforming Public Procurement — maximising the opportunity presented by the Act",
+      "year": 2024,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/jx87i561uhoceosnns5yc/2024-03-12-Benjamin-Taylor-PSTA-Transforming-Public-Procurement-Maximising-the-Opportunity-Presented-by-the-Act-v1.0BT-as-delivered-with-notes.pdf?rlkey=csjj2s91sa4dthx57w7cfddjz&dl=0",
+      "description": "PSTA event presentation.",
+      "tags": [
+        "public-services",
+        "commissioning",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Practical Design Thinking — Clearstream Cork",
+      "year": 2024,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/li9wucg8y9na1rfdq8huz/2024-02-20-UPDATED-Clearstream-Cork_Practical-Design-Thinking-Mar23-v0.6BT-as-delivered.pdf?rlkey=x2yixmuyzrr8ki9v5kyirdjev&dl=0",
+      "description": "As-delivered workshop deck.",
+      "tags": [
+        "practice",
+        "design",
+        "workshop"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Systems Leadership, Change, Theory and Practice — OU systems community",
+      "year": 2023,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/bmng5qcqxwie1mojxnuj8/2023-06-28-Benjamin-Taylor-for-OU-systems-community-Systems-Leadership-Change-Theory-and-Practice-v0.6BT.pdf?rlkey=ygyopazm2jijrg3k0ax3krrt9&dl=0",
+      "description": "Developed systems-leadership presentation.",
+      "tags": [
+        "systems",
+        "leadership",
+        "lecture"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Design of workshops for systems practice interventions",
+      "year": 2023,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/c1uzmyxg2s0upzjgp59vd/2023-09-07-CS-SCiO-Benjamin-Taylor-design-of-workshops-for-systems-practice-interventiosn-ESS-v1.5BT.pdf?rlkey=a0rjy1joc6zmbs7k8mzxpzpok&dl=0",
+      "description": "Teaching deck.",
+      "tags": [
+        "systems",
+        "practice",
+        "workshop"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Everything is contingent (well, not everything) — Requisite Agility",
+      "year": 2023,
+      "format": "session material",
+      "url": "https://docs.google.com/presentation/d/14AjUNm5zfMHxC_adL2j09CSEZtKWx2x7/edit?usp=sharing",
+      "description": "Public Google Slides deck.",
+      "tags": [
+        "systems",
+        "complexity",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Systems Leadership, Change, Theory and Practice — SCiO",
+      "year": 2022,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/gwx4hma8vw7cmixgx069y/2022-07-11-Benjamin-Taylor-at-SCiO-Systems-Leadership-Change-Theory-and-Practice-v0.4BT.pdf?rlkey=cssx06tl5dzjdn761z8xx91bl&dl=0",
+      "description": "SCiO presentation.",
+      "tags": [
+        "systems",
+        "leadership",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Systems convening, systems practice, systems theory",
+      "year": 2022,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/d38g20o5y801fcu74vl1v/2022-06-13-systems-convening-systems-practice-systems-theory-v0.6DM-with-notes.pdf?rlkey=jj99ek5balfhotcmjnbv73sgg&dl=0",
+      "description": "Convening session.",
+      "tags": [
+        "systems",
+        "convening",
+        "workshop"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Five core leadership practices — StretchCon",
+      "year": 2022,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/mumd3h20uux050a6noe7q/2022-11-28-Benjamin-Taylor-five-core-leadership-practices-for-Stretchcon-extended-with-reading-recommendations.pdf?rlkey=zc8jzlmbelk81jn1xxaw1y80c&dl=0",
+      "description": "Extended deck with reading recommendations.",
+      "tags": [
+        "leadership",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Future of Work Scotland",
+      "year": 2022,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/uxleu09urdq09q4j36mdf/2022-07-13-Benjamin-Taylor-RedQuadrant-Future-of-Work-Scotland-presentation.pdf?rlkey=gq1znzjnkle9f0btntzwaw910&dl=0",
+      "description": "Conference presentation.",
+      "tags": [
+        "organisation",
+        "public-services",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Freethinkers Corner",
+      "year": 2022,
+      "format": "session material",
+      "url": "https://docs.google.com/presentation/d/1YmnBkv-IBsfUuPCaOkBp9i8udQbPh3ES/edit?usp=sharing",
+      "description": "Public Google Slides deck.",
+      "tags": [
+        "systems",
+        "thinking",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "The Adaptive Council — LearnFest",
+      "year": 2021,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/rvuz44tvyfloh2786jvi8/Benjamin-Taylor-the-Public-Service-Transformation-Academy-the-Adaptive-Council-for-LearnFest-2021.pdf?rlkey=ohz6zsodrgkzf0iz7fyswrdpy&dl=0",
+      "description": "Public-service transformation presentation.",
+      "tags": [
+        "public-services",
+        "leadership",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Learning community to build back better in the days after",
+      "year": 2021,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/8de89g6xqxttsq0xbktbf/2021-07-23-PSTA-learning-community-to-build-back-better-in-the-days-after-v1.0BT-with-notes.pdf?rlkey=ugl94iry1f77ui2wta560oyac&dl=0",
+      "description": "PSTA session.",
+      "tags": [
+        "public-services",
+        "learning",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "The four quadrants of thinking threats — SCiO open event",
+      "year": 2021,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/0pg49y3vkfqi1ou1mi1cu/Benjamin-Taylor-Jan-2021-SCiO-Open-Event-The-four-quadrants-of-thinking-threats.mp4?rlkey=06ecot7tfjlj0r56lhsyu6gqk&dl=0",
+      "description": "Recorded session.",
+      "tags": [
+        "systems",
+        "thinking",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Cybernetics is not the banana — OR63",
+      "year": 2021,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/4w3c7i5e8hmzibiuosnmb/2021-08-01-Benjamin-Taylor-for-OR63-Cybernetics-is-not-the-banana-a-story-of-practice-transfer-in-public-service-transformation-consultancy-v1.8BT.pdf?rlkey=hswugiqmfwtgrvzgedx082tt5&dl=0",
+      "description": "Practice-transfer story.",
+      "tags": [
+        "systems",
+        "cybernetics",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Immunity to Change — Australasian Change Days",
+      "year": 2020,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/8ol2elgq96gs1nej6dnfm/2020-09-11-Australasian-Change-Days-Immunity-to-Change-v1.1BT-as-delivered.pdf?rlkey=b4f8twh7mxx5svd06tzqp2ji4&dl=0",
+      "description": "As-delivered session.",
+      "tags": [
+        "change",
+        "leadership",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Leading organisational change — PSTA webinar",
+      "year": 2020,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/2zsqt9i3riwy8u6gjznxm/2020-03-31-PSTA-webinar-Benjamin-Taylor-leading-organisational-change-v0.5BT.pdf?rlkey=8cnp4qptom01385etcuqlvyvw&dl=0",
+      "description": "Webinar slides.",
+      "tags": [
+        "change",
+        "leadership",
+        "webinar"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Crisis, total football and human needs",
+      "year": 2020,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/ml6vja0ezhpcq97czu69q/2020-06-19-Benjamin-Taylor-crisis-total-football-and-human-needs-human-and-organisational-needs-and-five-core-practices-v1.0BT-for-RA.pdf?rlkey=gdoa6ori3bfwxf1o9jdrkiimy&dl=0",
+      "description": "Five core practices under pressure.",
+      "tags": [
+        "leadership",
+        "public-services",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "The Adaptive Council model",
+      "year": 2020,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/97ws4kurk5iie4cffefn8/2020-11-18-the-Public-Service-Transformation-Academy-and-Redquadrant-the-adaptive-council-model-v0.2BT.pdf?rlkey=nflc0i3ee2lgbdcrhrmqv58dx&dl=0",
+      "description": "Adaptive Council presentation.",
+      "tags": [
+        "public-services",
+        "leadership",
+        "workshop"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Government After Shock — build back better",
+      "year": 2020,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/216k0v1876ocxco9oyutn/2020-11-17-government-after-shock-build-back-better-in-the-days-after-round-table-v1.1BT-with-notes.pdf?rlkey=7moc790jedpvr07bq5kx1i57f&dl=0",
+      "description": "Round-table deck.",
+      "tags": [
+        "public-services",
+        "strategy",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Patterns of strategy webinar",
+      "year": 2020,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/ygkq2axkky3ocq0kxsvxn/2020-03-25-patterns-of-strategy-Webinar.mp4?rlkey=bfeh9xqtvmh1u2lms5157m5ng&dl=0",
+      "description": "Recorded webinar.",
+      "tags": [
+        "strategy",
+        "systems",
+        "webinar"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Somerset SLT scenario planning",
+      "year": 2020,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/n6cvetcr6tntznrom0gov/2020-09-22-Someset-SLT-scenario-planning-v0.4BT-AS-DELIVERED-scenarios.pptx?rlkey=5u2f3ofsw4rsmmo5n9j9uczvo&dl=0",
+      "description": "As-delivered scenario set.",
+      "tags": [
+        "public-services",
+        "strategy",
+        "workshop"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Power and love in parts and wholes — Oshry and Beer",
+      "year": 2019,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/65nspxv75j4mqz26xdfbj/2019-12-01-Benjamin-Taylor-power-and-love-in-parts-and-wholes-Oshry-and-Beer-v0.3BT.pdf?rlkey=xxx2wrvbttx5mp1h409mibpvq&dl=0",
+      "description": "Systems and organisational dynamics.",
+      "tags": [
+        "systems",
+        "power",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Leadership for transformation",
+      "year": 2019,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/su91r23c1na7aj4k3q1xc/2019-10-30-RedQuadrant-leadership-for-transformation-v3.0BT.pdf?rlkey=d2gmzbj4jc1m4jag7xhca8fi8&dl=0",
+      "description": "Developed leadership presentation.",
+      "tags": [
+        "leadership",
+        "public-services",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Systems Innovation London VSM workshop",
+      "year": 2019,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/nuzy6oofhmi2zoeu1a4jk/2019-09-03-Systems-Innovation-London-VSM-workshop.pdf?rlkey=u0orouifyc8yzwvgxqamq56ix&dl=0",
+      "description": "Historic VSM workshop; not part of the canonical VSM page.",
+      "tags": [
+        "systems",
+        "organisation",
+        "workshop"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "PSTA and the development of commissioning",
+      "year": 2019,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/sq22h8l99hdctbx8u6naf/2019-09-06-Benjamin-P-Taylor-presentation-the-PSTA-and-the-development-of-commissioning-v1.0BT.pdf?rlkey=ku8dzu11y6wahudqab23pqbhn&dl=0",
+      "description": "Historic presentation; not part of the current Compass page.",
+      "tags": [
+        "public-services",
+        "commissioning",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "GovTech",
+      "year": 2019,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/6wigu2qm3n34b0xprrar6/2019-03-14-GovTech-Benjamin-Taylor-as-delivered-for-circulation-v1.1BT.pdf?rlkey=e1ka15gwo8oljsu3d5996lt5j&dl=0",
+      "description": "As-delivered presentation.",
+      "tags": [
+        "public-services",
+        "technology",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Bensberg CtD",
+      "year": 2019,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/2wo3jvj68okjawbojsxhy/Bensberg-CtD-27-March-19.pdf?rlkey=z6pwsnrh3e736s726wrc6v1yg&dl=0",
+      "description": "Conference material.",
+      "tags": [
+        "systems",
+        "change",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Metacontextuality and Bongard games",
+      "year": 2017,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/bnm9eusb668l21htypchj/2017-10-16-Metacontextuality-and-bongard-games-v1.1BT-for-circulation.pdf?rlkey=y6n33wekyzy28z81jh2q7u6bi&dl=0",
+      "description": "Original circulated presentation.",
+      "tags": [
+        "systems",
+        "thinking",
+        "conference"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "Viable systems model for governance",
+      "year": 2017,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/5d7842qqa4acodfj2sg75/2017-07-11-viable-systems-model-for-governance-v0.2BT.pdf?rlkey=54zaq3iweiyqagoa7v3mdzzp6&dl=0",
+      "description": "Historic VSM application; archive only.",
+      "tags": [
+        "systems",
+        "organisation",
+        "workshop"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "RedQuadrant and VECIT change",
+      "year": 2016,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/92gvoxp8lwduifq0pxdil/2016-12-05-RedQuadrant-and-VECIT-change-v0.6BT.pdf?rlkey=japa1wl6n1vw8n9otuerg71i0&dl=0",
+      "description": "Early VECIT presentation.",
+      "tags": [
+        "change",
+        "workshop"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "talks-and-sessions",
+      "title": "RedQuadrant demand management webinar",
+      "year": 2015,
+      "format": "session material",
+      "url": "https://www.dropbox.com/scl/fi/b5y5km6d5quddd989js9x/2015-01-23-11.05-RedQuadrant-demand-management-webinar.wmv?rlkey=3n4u8nzovl6tsw19hvtqzv1b8&dl=0",
+      "description": "Recorded webinar.",
+      "tags": [
+        "public-services",
+        "webinar"
+      ],
+      "rights": "own/session material"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "My top one hundred (and six) LinkedIn posts",
+      "year": 2021,
+      "format": "visual or article",
+      "url": "https://docs.google.com/document/d/1B_miHLgsfNt8VVlOd8rQJ8UueYezYp7J6q-yGXEMbJw/edit?usp=sharing",
+      "description": "A deliberately broad index of earlier posts.",
+      "tags": [
+        "writing",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Five core leadership practices for LinkedIn",
+      "year": 2021,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/dojeq5hdnlcezbieuhn3c/Benjamin-Taylor-five-core-leadership-practices-for-linkedin.pdf?rlkey=bnv58vc15zll8rli72i7x8yhl&dl=0",
+      "description": "Compact visual version.",
+      "tags": [
+        "leadership",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Smart Localism",
+      "year": 2026,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/ns4kduzxic699v68hy7mc/Smart_Localism.pdf?rlkey=0ff4i9pea38menhjzw9fqhosh&dl=0",
+      "description": "Short visual argument.",
+      "tags": [
+        "public-services",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "35 doughnuts",
+      "year": 2026,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/c66vmp2bkusv6i1dd6ldi/35-doughnuts.pdf?rlkey=ffozdnv00ymkn3ctylrqrcpe0&dl=0",
+      "description": "Visual/social PDF.",
+      "tags": [
+        "systems",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Transformation with and without easy answers",
+      "year": 2026,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/y9tultqci5zu29c37g10q/Transformation-with-and-without-easy-answers.pdf?rlkey=kzrcftri46adkca5md4z1561n&dl=0",
+      "description": "Visual comparison.",
+      "tags": [
+        "change",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Schismogenesis — the evidenced origin",
+      "year": 2026,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/sahup8vpo6k8qpbahp4rk/Schismogenesis-the-evidenced-origin.docx?rlkey=rbzbe8xce3fo2avg2g3ch7op2&dl=0",
+      "description": "Source-based note.",
+      "tags": [
+        "systems",
+        "writing"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "A manifesto for relational public services",
+      "year": 2026,
+      "format": "visual or article",
+      "url": "https://docs.google.com/document/d/1R5f-5HSls8f5PfOhetzctXvSgI4wRJeITUMD4LJc0vs/edit?usp=sharing",
+      "description": "Keir Hardie poster working document.",
+      "tags": [
+        "public-services",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "The ladder of relationality in public service",
+      "year": 2026,
+      "format": "visual or article",
+      "url": "https://docs.google.com/document/d/1FewYqWndCJbjGYOlkWFZGBHxbs3AM4lA/edit?usp=sharing",
+      "description": "Working paper.",
+      "tags": [
+        "public-services",
+        "writing"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "The twelve per cent rule",
+      "year": 2025,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/it53t65u5k90pm8nn1c76/the-twelve-per-cent-rule.png?rlkey=6nqbmxqdmd5rveecwbov5kt9n&dl=0",
+      "description": "Single-image argument.",
+      "tags": [
+        "organisation",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "The great big shit-shovelling machine",
+      "year": 2019,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/trv2tre8b8gwk92bh4npa/The-great-big-shit-shovelling-machine.pdf?rlkey=u65y7o3r85ii14epj6da0p9kh&dl=0",
+      "description": "Short visual argument.",
+      "tags": [
+        "public-services",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "There is no new paradigm",
+      "year": 2019,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/6e02bo7ika8vjwmn0y0ts/There-is-no-new-Paradigm.pdf?rlkey=2vk7ne8udw3g0smus4knryq3s&dl=0",
+      "description": "Argument against paradigm-shift theatre.",
+      "tags": [
+        "systems",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "I’m a little bit sick of paradigm shifts",
+      "year": 2019,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/aejh9uen8msqm7jftuob8/Benjamin-Taylor-I-m-a-little-bit-sick-of-paradigm-shifts-Local-Government-Chronicle-LGC.pdf?rlkey=dpucq5mmnvd5qvm7umk4be6wp&dl=0",
+      "description": "LGC article copy.",
+      "tags": [
+        "systems",
+        "writing"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "The nonsense of “chairman”",
+      "year": 2019,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/x49gk0o0c2pj2to6bzjhu/The-nonsense-of-chairman.pdf?rlkey=2c7muu5ial2bn3ifba4q8ralz&dl=0",
+      "description": "Short argument.",
+      "tags": [
+        "organisation",
+        "writing"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "A core element of Adaptive Leadership",
+      "year": 2020,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/lq32bzaby0q1bhu9zr1di/Benjamin-Taylor-a-core-element-of-Adaptive-Leadership.pdf?rlkey=st0332plasppsc8z2wevmkk80&dl=0",
+      "description": "Short visual explainer.",
+      "tags": [
+        "leadership",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Get on the balcony",
+      "year": 2020,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/xzjimsin8vasu0m34etai/get-on-the-balcony.jpg?rlkey=t5vmerup43cxdjgibwet82wtg&dl=0",
+      "description": "Adaptive-leadership image.",
+      "tags": [
+        "leadership",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Adaptive leadership — stakeholders",
+      "year": 2020,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/hox77sd2qsd2xg0fj0hld/adaptive-leadership-stakeholders.pdf?rlkey=vvjowoalikg82n49er6bl2li3&dl=0",
+      "description": "Visual explainer.",
+      "tags": [
+        "leadership",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "By, with, for, to",
+      "year": 2021,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/x79qeqvx9spca8bl9aq7n/NEW-by-with-for-to.jpg?rlkey=npff41ojlwjs738kvgkas9n79&dl=0",
+      "description": "A compact distinction about participation and power.",
+      "tags": [
+        "public-services",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "By, with, four, to",
+      "year": 2021,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/v2k6vwbr3v6ezcagcvxuj/by-with-four-to.jpg?rlkey=x5nn9a62mv8b8w83lr6f6udxr&dl=0",
+      "description": "The inevitable sequel.",
+      "tags": [
+        "public-services",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "The flow of a meeting from problem to opportunity",
+      "year": 2024,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/mp5111syqygc0uht7x9d2/the-flow-of-a-meeting-from-problem-to-opportunity.pdf?rlkey=werq54f15xabrponyfp2kb61m&dl=0",
+      "description": "Facilitation diagram.",
+      "tags": [
+        "practice",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "RedQuadrant systems-change framework",
+      "year": 2021,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/pt7cd8234otsjae3o9g2k/RedQuadrant-systems-change-framework.jpg?rlkey=7064y80u4xtlg55yybyyvk7tu&dl=0",
+      "description": "Framework image.",
+      "tags": [
+        "systems",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Team decision-making in complexity",
+      "year": 2022,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/kgxxmwtpc8wc9eqmrp352/Team-decision-making-in-complexity-Benjamin-Taylor-RedQuadrant.pdf?rlkey=h3nd8auf4txe9hjstldkteo9w&dl=0",
+      "description": "Short PDF.",
+      "tags": [
+        "complexity",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Wrecking synergy to stake out territory",
+      "year": 2024,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/2q952nnt3tfcok239f27x/Wrecking-Synergy-to-Stakeout-Territory.pdf?rlkey=tg0bggqi0992d7oqncpav4zl0&dl=0",
+      "description": "Paper/visual essay.",
+      "tags": [
+        "organisation",
+        "writing"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Never despair — five principles for the people",
+      "year": 2020,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/0g99irwkt07x9m6ux5nuw/never-despair.-change-is-a-state-of-mind-that-everyone-shares-5-principle-for-the-people-towards-good-government.pdf?rlkey=c9x7wvjme2bo5ipgo325wxyap&dl=0",
+      "description": "Towards good government.",
+      "tags": [
+        "public-services",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "The transformation “journey” snakes and ladders",
+      "year": 2019,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/x4gnupohihgo83b193pjy/2019-10-13-The-transformation-journey-snakes-and-ladders.pdf?rlkey=zhtqrc4ly7dhs10sq8dvawea8&dl=0",
+      "description": "A less solemn transformation map.",
+      "tags": [
+        "change",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Everything that you see is yourself",
+      "year": 2019,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/663b5h26xkasqew9msho4/Everything-that-you-see-is-yourself.pdf?rlkey=rw4zsnpnvaea9tx4wbqxymyso&dl=0",
+      "description": "Observer and projection.",
+      "tags": [
+        "systems",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "I can’t — I’m being a public intellectual",
+      "year": 2020,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/zkxub5kz08k8cbgkos1pf/I-can-t-I-m-being-a-public-intellectual.png?rlkey=ytleawygtxaex76yd4dnffvlg&dl=0",
+      "description": "Accurate productivity system.",
+      "tags": [
+        "writing",
+        "social"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Healing our divided communities",
+      "year": 2019,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/h0r5oclzze7bj4ujwp65b/Benjamin-Taylor_-Healing-our-divided-communities-Local-Government-Chronicle-LGC.pdf?rlkey=szy8j5d9fm8ck36f218edm57o&dl=0",
+      "description": "LGC article copy.",
+      "tags": [
+        "public-services",
+        "writing"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "What disconnects policy and delivery? Class warfare",
+      "year": 2019,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/m1vclwpjwbikgg73b2slm/What-disconnects-policy-and-delivery-Class-warfare-Opinion-LGC.pdf?rlkey=26vl9nle3dr6rzs0gieja5ydu&dl=0",
+      "description": "LGC article copy.",
+      "tags": [
+        "public-services",
+        "writing"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "We must find a future where systems change can take root",
+      "year": 2019,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/6wwckqg9dq49yhq1nz7rn/We-must-find-a-future-where-systems-change-can-take-root-Opinion-LGC.pdf?rlkey=ecsfovlrz4vcqszjmtgpk3ftf&dl=0",
+      "description": "LGC article copy.",
+      "tags": [
+        "public-services",
+        "writing"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Tips on making place-based working work",
+      "year": 2021,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/epj0a6h6o3d0ijpr1fe8a/Benjamin-Taylor_-Tips-on-making-place-based-working-work-_-Local-Government-Chronicle-LGC.pdf?rlkey=d3fxipow0pkv4hk6bxpifmhwq&dl=0",
+      "description": "LGC article copy.",
+      "tags": [
+        "public-services",
+        "writing"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Capturing learning — learning network",
+      "year": 2020,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/izo3g2vqi7uq0adwzaff2/Benjamin-Taylor-MJ-piece-on-capturing-learning-learning-network.pdf?rlkey=tqtc6qn54hkdk9tihktbosuc0&dl=0",
+      "description": "MJ article copy.",
+      "tags": [
+        "learning",
+        "writing"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "Scenario planning and speculative futures — learning network",
+      "year": 2020,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/czi6rwr905rbyeufxz456/Benjamin-Taylor-LGC-piece-on-scenario-planning-speculative-futures-learning-network.pdf?rlkey=qv8kn2foa86j2fpl6nl5mwb1t&dl=0",
+      "description": "LGC article copy.",
+      "tags": [
+        "strategy",
+        "writing"
+      ],
+      "rights": "own/public copy"
+    },
+    {
+      "concept": "visual-and-social-publications",
+      "title": "RedQuadrant Mail — Life in 5",
+      "year": 2021,
+      "format": "visual or article",
+      "url": "https://www.dropbox.com/scl/fi/821ukghzx5snlcrc9hz7e/RedQuadrant-Mail-Life-in-5.pdf?rlkey=aacvtvr9bgywzhqm199c7ubg1&dl=0",
+      "description": "Newsletter/post PDF.",
+      "tags": [
+        "leadership",
+        "social"
+      ],
+      "rights": "own/public copy"
+    }
+  ],
+  "source_scans": {
+    "dropbox": "Public folder plus full shared-link register",
+    "google_drive": "Owned files with anyone-with-link visibility on benjamin.taylor@redquadrant.com",
+    "short_links": "Gmail/SharePoint references to link.redquadrant.com and legacy Bitly routes",
+    "other_account": "ben_taylor@hotmail.com not connected in this session"
+  }
 }
