@@ -9,7 +9,7 @@ const h = value => String(value ?? '')
   .replaceAll('>', '&gt;')
   .replaceAll('"', '&quot;');
 
-const nav = `<header><div class="wrap top"><a class="brand" href="/">Benjamin P Taylor — antlerboy</a><nav class="nav" aria-label="Library navigation"><a href="/library/">Library</a><a href="/library/publications/">Browse</a><a href="/library/articles-and-essays/">Writing</a><a href="/library/talks-and-sessions/">Talks</a><a href="/library/chosen-path/">Search</a><a href="/">Home</a></nav></div></header>`;
+const nav = `<header><div class="wrap top"><a class="brand" href="/">Benjamin P Taylor — antlerboy</a><nav class="nav" aria-label="Library navigation"><a href="/library/">Library</a><a href="/library/publications/">Browse</a><a href="/library/articles-and-essays/">Writing</a><a href="/library/talks-and-sessions/">Talks</a><a href="/library/search/">Search all</a><a href="/">Home</a></nav></div></header>`;
 
 function shell({ slug, title, description, eyebrow = 'Public work library', lead = description, body, scripts = [] }) {
   const canonical = `https://antlerboy.com/library/${slug ? `${slug}/` : ''}`;
@@ -29,7 +29,7 @@ ${nav}
   <section class="hero"><div class="wrap">${slug ? `<div class="crumbs"><a href="/library/">Library</a> / ${h(title)}</div>` : ''}<p class="eyebrow">${h(eyebrow)}</p><h1>${h(title)}</h1><p class="lead">${h(lead)}</p></div></section>
 ${body}
 </main>
-<footer><div class="wrap">Benjamin P Taylor — <a href="/library/">working public library</a></div></footer>
+<footer><div class="wrap">Benjamin P Taylor — <a href="/library/">working public library</a> · <a href="https://github.com/antlerboy/aboutme/issues/1">Suggest a correction or addition</a></div></footer>
 ${scripts.map(src => `<script src="${h(src)}"></script>`).join('\n')}
 </body>
 </html>\n`;
@@ -68,7 +68,10 @@ const waysIn = [
   { title: 'Preprints and working papers', description: 'Substantial work made available before or outside formal publication.', tags: ['writing'], url: '/library/preprints-and-working-papers/' },
   { title: 'Talks, teaching, and workshops', description: 'Public sessions and cleaned presentation material.', tags: ['practice'], url: '/library/talks-and-sessions/' },
   { title: 'RedQuadrant and PSTA reference', description: 'Selected organisational methods, reports, and historical reference documents.', tags: ['public-services', 'reference'], url: '/library/redquadrant-psta-reference/' },
+  { title: 'Search everything', description: 'One search across this library, Chosen Path, and the Systems Community of Inquiry.', tags: ['writing', 'index'], url: '/library/search/' },
   { title: 'Search Chosen Path', description: 'A keyword catalogue of the essays and fragments on chosen-path.org.', tags: ['writing', 'index'], url: '/library/chosen-path/' },
+  { title: 'Search the Systems Community of Inquiry', description: 'A parallel catalogue of public posts on SysCoi.', tags: ['systems', 'index'], url: '/library/syscoi/' },
+  { title: 'Search this library', description: 'Search the curated papers, talks, podcasts, videos, tools, models, and reference material.', tags: ['index'], url: '/library/catalogue/' },
   { title: 'Browse by form', description: 'Writing, recordings, visual work, reports, and communities.', tags: ['index'], url: '/library/publications/' },
 ];
 
@@ -92,14 +95,14 @@ save('', shell({
   title: 'A working library',
   description: 'A selected library of Benjamin P Taylor’s public writing, talks, tools, models, recordings, and reference material.',
   eyebrow: 'Public work library',
-  lead: 'A selected collection of public writing, talks, tools, models, recordings, and reference material. It is a working library, not a claim to completeness.',
+  lead: 'A selected collection of Benjamin P Taylor’s public writing, talks, tools, models, recordings, and reference material. It is a working library, and not complete.',
   body: cardSection('Find a way in', 'Use the route that best fits what you are looking for.', waysIn, { toolbar: true })
     + cardSection('Recurring themes', 'Ideas and practices I keep returning to, often in unfinished or changing forms.', themes, { alt: true }),
   scripts: ['/library/app.js'],
 }));
 
 const publicationCollections = [
-  ...waysIn.slice(0, 5),
+  ...waysIn.slice(0, 8),
   { title: 'Podcasts', description: 'Hosted shows and guest appearances, with moved links repaired where possible.', tags: ['audio'], url: '/library/podcasts/' },
   { title: 'Videos and recorded conversations', description: 'Presentations, panels, and recorded conversations.', tags: ['video'], url: '/library/videos/' },
   { title: 'Visual models and short publications', description: 'Diagrams, visual arguments, and short publications.', tags: ['visual'], url: '/library/visual-models/' },
@@ -280,7 +283,14 @@ resourcePage({ slug: 'public-service-transformation', title: 'Public-service tra
   { title: 'Public Service: State of Transformation', meta: '2018–2019 · five reports', description: 'The principal PSTA and RedQuadrant reports and surveys.', url: '/library/state-of-transformation/' },
 ] }] });
 
-const chosenPathBody = `<section class="section"><div class="wrap"><div class="note"><strong>A search aid, not an oracle.</strong> This catalogue indexes public posts from Chosen Path. Results reflect words used in the posts; they do not establish a settled position, and older posts may no longer represent my view.</div><div class="catalogue-controls"><label class="field field-wide"><span>Ask in keywords</span><input id="catalogue-query" class="search" type="search" placeholder="For example: relational public services, cybernetics, power"></label><label class="field"><span>Year</span><select id="catalogue-year"><option value="all">All years</option></select></label><label class="field"><span>Order</span><select id="catalogue-sort"><option value="relevance">Relevance</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></label></div><div><p class="eyebrow">Try a theme</p><div id="catalogue-topics" class="topic-list"></div></div><p id="catalogue-status" class="count" aria-live="polite">Loading the catalogue…</p><div id="catalogue-results" class="catalogue-results"></div><div class="catalogue-actions"><button id="catalogue-more" class="button hidden" type="button">Show more</button><button id="catalogue-clear" class="button" type="button">Clear</button></div></div></section>`;
-save('chosen-path', shell({ slug: 'chosen-path', title: 'Search Chosen Path', description: 'A keyword catalogue of the public essays and fragments on chosen-path.org.', eyebrow: 'Searchable writing archive', lead: 'Search the public Chosen Path archive by words, year, and a small set of recurring themes.', body: chosenPathBody, scripts: ['/library/chosen-path/catalogue.js'] }));
+function catalogueBody(note, links = '', withSource = false) {
+  return `<section class="section"><div class="wrap"><div class="note">${note}</div>${links}<div class="catalogue-controls"><label class="field field-wide"><span>Ask in keywords</span><input id="catalogue-query" class="search" type="search" placeholder="For example: relational public services, cybernetics, power"></label><label class="field"><span>Year</span><select id="catalogue-year"><option value="all">All years</option></select></label><label class="field"><span>Order</span><select id="catalogue-sort"><option value="relevance">Relevance</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></label>${withSource ? '<label class="field"><span>Source</span><select id="catalogue-source"><option value="all">All sources</option></select></label>' : ''}</div><div><p class="eyebrow">Try a theme</p><div id="catalogue-topics" class="topic-list"></div></div><p id="catalogue-status" class="count" aria-live="polite">Loading the catalogue…</p><div id="catalogue-results" class="catalogue-results"></div><div class="catalogue-actions"><button id="catalogue-more" class="button hidden" type="button">Show more</button><button id="catalogue-clear" class="button" type="button">Clear</button></div></div></section>`;
+}
+
+const searchScript = ['/library/chosen-path/catalogue.js'];
+save('chosen-path', shell({ slug: 'chosen-path', title: 'Search Chosen Path', description: 'A keyword catalogue of the public essays and fragments on chosen-path.org.', eyebrow: 'Searchable writing archive', lead: 'Chosen Path is Benjamin P Taylor’s main blog: essays, arguments, working notes, and fragments on public services, systems, change, and practice.', body: catalogueBody('<strong>A search aid, not an oracle.</strong> This catalogue indexes public posts from Chosen Path. Older posts may no longer represent my view.', '<div class="actions"><a class="button primary" href="https://chosen-path.org/">Visit Chosen Path</a><a class="button" href="/library/syscoi/">Search SysCoi</a><a class="button" href="/library/search/">Search everything</a></div>'), scripts: searchScript }));
+save('syscoi', shell({ slug: 'syscoi', title: 'Search the Systems Community of Inquiry', description: 'A keyword catalogue of public posts from the Systems Community of Inquiry.', eyebrow: 'Searchable systems weblog', lead: 'The Systems Community of Inquiry is a long-running shared weblog and link stream about systems, cybernetics, complexity, and related practice.', body: catalogueBody('<strong>A broad community record.</strong> SysCoi contains linked material from many authors and sources. Inclusion is not endorsement, and the original source and attribution remain decisive.', '<div class="actions"><a class="button primary" href="https://stream.syscoi.com/">Visit SysCoi</a><a class="button" href="/library/chosen-path/">Search Chosen Path</a><a class="button" href="/library/search/">Search everything</a></div>'), scripts: searchScript }));
+save('catalogue', shell({ slug: 'catalogue', title: 'Search the public library', description: 'Search Benjamin P Taylor’s curated public library, including writing, talks, podcasts, tools, models, recordings, and reference material.', eyebrow: 'Curated catalogue', lead: 'Search the library itself, including papers, working papers, talks, podcasts, videos, tools, models, collections, and reference documents.', body: catalogueBody('<strong>The catalogue follows the public library.</strong> It searches titles, descriptions, formats, and themes. It does not search the full text inside every linked PDF or recording.', '<div class="actions"><a class="button" href="/library/chosen-path/">Search Chosen Path</a><a class="button" href="/library/syscoi/">Search SysCoi</a><a class="button primary" href="/library/search/">Search everything</a></div>'), scripts: searchScript }));
+save('search', shell({ slug: 'search', title: 'Search all public work', description: 'Search the public library, Chosen Path, and the Systems Community of Inquiry together.', eyebrow: 'Combined catalogue', lead: 'One search across the curated public library, Chosen Path, and the Systems Community of Inquiry.', body: catalogueBody('<strong>Three different kinds of collection.</strong> The library is curated; Chosen Path is Benjamin’s writing archive; SysCoi is a much broader community link stream. Search results preserve those distinctions.', '<div class="actions"><a class="button" href="/library/catalogue/">Library only</a><a class="button" href="/library/chosen-path/">Chosen Path only</a><a class="button" href="/library/syscoi/">SysCoi only</a></div>', true), scripts: searchScript }));
 
 console.log('Rebuilt the curated library pages.');

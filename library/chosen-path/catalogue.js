@@ -7,6 +7,7 @@
   const results = document.querySelector('#catalogue-results');
   const more = document.querySelector('#catalogue-more');
   const clear = document.querySelector('#catalogue-clear');
+  const source = document.querySelector('#catalogue-source');
   const pageSize = 24;
   let catalogue;
   let activeTopic = 'all';
@@ -48,7 +49,8 @@
     const terms = tokenise(query.value.trim());
     current = scoreDocuments(terms)
       .filter(({ document }) => year.value === 'all' || document.year === year.value)
-      .filter(({ document }) => activeTopic === 'all' || document.topics.includes(activeTopic));
+      .filter(({ document }) => activeTopic === 'all' || document.topics.includes(activeTopic))
+      .filter(({ document }) => !source || source.value === 'all' || document.source === source.value);
 
     const direction = sort.value;
     current.sort((a, b) => {
@@ -62,7 +64,7 @@
 
   function render() {
     const shown = current.slice(0, visible);
-    status.textContent = `${current.length.toLocaleString()} post${current.length === 1 ? '' : 's'} found · catalogue updated ${new Date(catalogue.generatedAt).toLocaleDateString('en-GB')}`;
+    status.textContent = `${current.length.toLocaleString()} item${current.length === 1 ? '' : 's'} found · catalogue updated ${new Date(catalogue.generatedAt).toLocaleDateString('en-GB')}`;
     results.innerHTML = shown.map(({ document }) => `<article class="catalogue-result"><div><p class="eyebrow">${escape(document.date)}</p><h3><a href="${escape(document.url)}">${escape(document.title)}</a></h3><p>${escape(document.excerpt || 'No excerpt available.')}</p><div class="tags">${document.topics.map(topic => `<span class="tag">${escape(catalogue.topics.find(item => item.key === topic)?.label || topic)}</span>`).join('')}</div></div></article>`).join('');
     if (!shown.length) results.innerHTML = '<div class="note">No matching posts. Try fewer or different words.</div>';
     more.classList.toggle('hidden', visible >= current.length);
@@ -76,9 +78,12 @@
 
   async function start() {
     try {
-      const response = await fetch('/library/chosen-path/catalogue.json');
+      const response = await fetch('catalogue.json');
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       catalogue = await response.json();
+      if (source && catalogue.sources?.length > 1) {
+        source.insertAdjacentHTML('beforeend', catalogue.sources.map(item => `<option value="${escape(item.key)}">${escape(item.label)}</option>`).join(''));
+      } else if (source) source.closest('.field').classList.add('hidden');
       year.insertAdjacentHTML('beforeend', catalogue.years.map(value => `<option value="${escape(value)}">${escape(value)}</option>`).join(''));
       topics.innerHTML = `<button class="topic active" type="button" data-topic="all">All themes</button>${catalogue.topics.map(topic => `<button class="topic" type="button" data-topic="${escape(topic.key)}">${escape(topic.label)}</button>`).join('')}`;
       topics.addEventListener('click', event => {
@@ -95,11 +100,13 @@
   query.addEventListener('input', apply);
   year.addEventListener('change', apply);
   sort.addEventListener('change', apply);
+  source?.addEventListener('change', apply);
   more.addEventListener('click', () => { visible += pageSize; render(); });
   clear.addEventListener('click', () => {
     query.value = '';
     year.value = 'all';
     sort.value = 'relevance';
+    if (source) source.value = 'all';
     selectTopic('all');
     query.focus();
   });

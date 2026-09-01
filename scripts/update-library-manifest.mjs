@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 
 const path = 'library/manifest.json';
 const manifest = JSON.parse(readFileSync(path, 'utf8'));
-manifest.updated = '2026-08-31';
+manifest.updated = '2026-09-01';
 
 const removed = /somerset slt|transduction|joy and work|work and joy/i;
 manifest.resources = manifest.resources.filter(resource => !removed.test(resource.title || '') && !/joyandwork\.com|transduction\.systems/i.test(resource.url || ''));
@@ -23,6 +23,9 @@ const pages = [
   { slug: 'preprints-and-working-papers', title: 'Preprints and working papers', type: 'collection', description: 'Current substantial manuscripts shared before or outside formal publication.', tags: ['writing', 'preprint'] },
   { slug: 'redquadrant-psta-reference', title: 'RedQuadrant and PSTA reference library', type: 'collection', description: 'Selected public organisational methods, reports and historical reference documents.', tags: ['public-services', 'reference'] },
   { slug: 'chosen-path', title: 'Search Chosen Path', type: 'index', description: 'A keyword catalogue of the public essays and fragments on chosen-path.org.', tags: ['writing', 'index'] },
+  { slug: 'syscoi', title: 'Search the Systems Community of Inquiry', type: 'index', description: 'A keyword catalogue of public posts on SysCoi.', tags: ['systems', 'index'] },
+  { slug: 'catalogue', title: 'Search the public library', type: 'index', description: 'Search the curated library, including podcasts, talks, tools, and papers.', tags: ['index'] },
+  { slug: 'search', title: 'Search all public work', type: 'index', description: 'Search the public library, Chosen Path, and SysCoi together.', tags: ['writing', 'systems', 'index'] },
 ];
 for (const page of pages) {
   const existing = manifest.pages.find(item => item.slug === page.slug);

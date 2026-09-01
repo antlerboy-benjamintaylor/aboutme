@@ -1,6 +1,6 @@
 {
   "title": "Benjamin P Taylor public work library",
-  "updated": "2026-08-31",
+  "updated": "2026-09-01",
   "pages": [
     {
       "slug": "cybernetics-is-not-the-banana",
@@ -306,6 +306,36 @@
       "description": "A keyword catalogue of the public essays and fragments on chosen-path.org.",
       "tags": [
         "writing",
+        "index"
+      ]
+    },
+    {
+      "slug": "syscoi",
+      "title": "Search the Systems Community of Inquiry",
+      "type": "index",
+      "description": "A keyword catalogue of public posts on SysCoi.",
+      "tags": [
+        "systems",
+        "index"
+      ]
+    },
+    {
+      "slug": "catalogue",
+      "title": "Search the public library",
+      "type": "index",
+      "description": "Search the curated library, including podcasts, talks, tools, and papers.",
+      "tags": [
+        "index"
+      ]
+    },
+    {
+      "slug": "search",
+      "title": "Search all public work",
+      "type": "index",
+      "description": "Search the public library, Chosen Path, and SysCoi together.",
+      "tags": [
+        "writing",
+        "systems",
         "index"
       ]
     }
