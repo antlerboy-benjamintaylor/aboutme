@@ -1,6 +1,6 @@
 {
   "title": "Benjamin P Taylor public work library",
-  "updated": "2026-08-30",
+  "updated": "2026-08-31",
   "pages": [
     {
       "slug": "cybernetics-is-not-the-banana",
@@ -278,6 +278,36 @@
       "tags": [
         "publication"
       ]
+    },
+    {
+      "slug": "preprints-and-working-papers",
+      "title": "Preprints and working papers",
+      "type": "collection",
+      "description": "Current substantial manuscripts shared before or outside formal publication.",
+      "tags": [
+        "writing",
+        "preprint"
+      ]
+    },
+    {
+      "slug": "redquadrant-psta-reference",
+      "title": "RedQuadrant and PSTA reference library",
+      "type": "collection",
+      "description": "Selected public organisational methods, reports and historical reference documents.",
+      "tags": [
+        "public-services",
+        "reference"
+      ]
+    },
+    {
+      "slug": "chosen-path",
+      "title": "Search Chosen Path",
+      "type": "index",
+      "description": "A keyword catalogue of the public essays and fragments on chosen-path.org.",
+      "tags": [
+        "writing",
+        "index"
+      ]
     }
   ],
   "resources": [
@@ -345,7 +375,7 @@
       "year": 2026,
       "format": "Google document",
       "url": "https://docs.google.com/document/d/1FewYqWndCJbjGYOlkWFZGBHxbs3AM4lA/edit?usp=sharing",
-      "description": "A working paper on degrees and conditions of relationality.",
+      "description": "Earlier solo working paper. A substantially updated, co-authored version is available in the preprints collection as Degrees of relationality.",
       "tags": [
         "public-services",
         "relationships",
@@ -670,9 +700,9 @@
     {
       "title": "Positive dynamics of differentiation and integration — ISSS",
       "year": 2024,
-      "format": "Web route",
-      "url": "https://link.redquadrant.com/dynamics-isss",
-      "description": "The ISSS presentation on differentiation, homogenisation, individuation and integration.",
+      "format": "PDF",
+      "url": "/library/files/talks/positive-dynamics-differentiation-and-integration.pdf",
+      "description": "The corrected 2024 ISSS presentation on differentiation, homogenisation, individuation and integration.",
       "tags": [
         "systems",
         "organisation",
@@ -685,9 +715,9 @@
     {
       "title": "Positive dynamics of differentiation and integration",
       "year": 2024,
-      "format": "session material",
-      "url": "https://link.redquadrant.com/dynamics-isss",
-      "description": "Presentation and session material.",
+      "format": "PDF",
+      "url": "/library/files/talks/positive-dynamics-differentiation-and-integration.pdf",
+      "description": "The corrected 2024 ISSS presentation on differentiation, homogenisation, individuation and integration.",
       "tags": [
         "practice"
       ],
@@ -1258,19 +1288,6 @@
       ]
     },
     {
-      "title": "Somerset SLT scenario planning",
-      "year": 2020,
-      "format": "session material",
-      "url": "https://www.dropbox.com/scl/fi/n6cvetcr6tntznrom0gov/2020-09-22-Someset-SLT-scenario-planning-v0.4BT-AS-DELIVERED-scenarios.pptx?rlkey=5u2f3ofsw4rsmmo5n9j9uczvo&dl=0",
-      "description": "Scenario-planning material.",
-      "tags": [
-        "strategy"
-      ],
-      "pages": [
-        "talks-and-sessions"
-      ]
-    },
-    {
       "title": "Scenario planning and speculative futures — learning network",
       "year": 2020,
       "format": "visual or article",
@@ -1779,7 +1796,7 @@
       "title": "Why Service Design Thinking - Service design in government and public services",
       "year": 2018,
       "format": "Podcast episode",
-      "url": "https://goo.gl/roAahJ",
+      "url": "https://podcasts.apple.com/us/podcast/service-design-in-government-and-public-services/id1104134900?i=1000384105616",
       "description": "A conversation about service design, government and public services.",
       "tags": [
         "guest",
@@ -2021,7 +2038,7 @@
       "title": "The Prime Domino 003 - Benjamin Taylor, RedQuadrant",
       "year": 2015,
       "format": "Podcast episode",
-      "url": "http://worthsolutions.com/blog/2015/04/003-benjamin-taylor-redquadrant/",
+      "url": "https://podcasts.apple.com/gb/podcast/primedomino-003-benjamin-taylor-redquadrant/id974705792?i=1000340913686",
       "description": "A conversation about RedQuadrant and public-service transformation.",
       "tags": [
         "guest",
@@ -2062,7 +2079,7 @@
       "title": "workshops.work episode 257",
       "year": "",
       "format": "Podcast episode",
-      "url": "https://workshops.work/podcast/257",
+      "url": "https://podcasts.apple.com/us/podcast/257-exploring-the-ethical-lines-between-facilitation/id1456264052?i=1000646218514",
       "description": "A conversation about workshops, facilitation and working with groups.",
       "tags": [
         "guest",
@@ -2109,20 +2126,6 @@
       "tags": [
         "guest",
         "leadership"
-      ],
-      "pages": [
-        "podcasts"
-      ]
-    },
-    {
-      "title": "Transduction",
-      "year": "",
-      "format": "Podcast archive",
-      "url": "https://transduction.systems/",
-      "description": "Systems, complexity and cybernetics in organisations, society and life.",
-      "tags": [
-        "hosted",
-        "systems"
       ],
       "pages": [
         "podcasts"
@@ -2354,20 +2357,6 @@
       ]
     },
     {
-      "title": "Joy and Work",
-      "year": "",
-      "format": "Podcast archive",
-      "url": "http://joyandwork.com/",
-      "description": "The public-service transformation podcast.",
-      "tags": [
-        "hosted",
-        "public-services"
-      ],
-      "pages": [
-        "podcasts"
-      ]
-    },
-    {
       "title": "Introduction to the Viable System Model",
       "year": "",
       "format": "Video",
@@ -2494,6 +2483,410 @@
       ],
       "pages": [
         "podcasts"
+      ]
+    },
+    {
+      "title": "Degrees of relationality",
+      "year": "2026",
+      "format": "Preprint PDF",
+      "url": "/library/files/preprints/2026-degrees-of-relationality-v12-taylor-boxer.pdf",
+      "description": "Benjamin P Taylor and Philip Boxer, v12.",
+      "tags": [
+        "writing",
+        "public-services",
+        "preprint"
+      ],
+      "pages": [
+        "preprints-and-working-papers",
+        "relational-public-services"
+      ]
+    },
+    {
+      "title": "The demand side of public services",
+      "year": "2026",
+      "format": "Preprint PDF",
+      "url": "/library/files/preprints/2026-the-demand-side-of-public-services-v9-boxer-taylor.pdf",
+      "description": "Philip Boxer and Benjamin P Taylor, v9.",
+      "tags": [
+        "writing",
+        "public-services",
+        "preprint"
+      ],
+      "pages": [
+        "preprints-and-working-papers",
+        "relational-public-services"
+      ]
+    },
+    {
+      "title": "Anxiety, ideology and the evacuation of the public realm",
+      "year": "2026",
+      "format": "Preprint PDF",
+      "url": "/library/files/preprints/2026-anxiety-ideology-and-the-evacuation-of-the-public-realm-v4-boxer-taylor.pdf",
+      "description": "Philip Boxer and Benjamin P Taylor, v4.",
+      "tags": [
+        "writing",
+        "public-services",
+        "preprint"
+      ],
+      "pages": [
+        "preprints-and-working-papers"
+      ]
+    },
+    {
+      "title": "Service systems, citizen ecosystems, and the politics we deny",
+      "year": "2026",
+      "format": "Preprint PDF",
+      "url": "/library/files/preprints/2026-service-systems-citizen-ecosystems-and-the-politics-we-deny-v3-taylor.pdf",
+      "description": "Benjamin P Taylor, v3.",
+      "tags": [
+        "writing",
+        "public-services",
+        "systems",
+        "preprint"
+      ],
+      "pages": [
+        "preprints-and-working-papers"
+      ]
+    },
+    {
+      "title": "What can systems thinking and change learn to become?",
+      "year": "2026",
+      "format": "Chapter appendix",
+      "url": "https://chosen-path.org/wp-content/uploads/2026/04/benjamin_taylor_what_can_systems_change_learn_to_become_appendix_from_understanding_systems_to_change_the_world.pdf",
+      "description": "Appendix to Understanding Systems to Change the World.",
+      "tags": [
+        "writing",
+        "systems"
+      ],
+      "pages": [
+        "articles-and-essays"
+      ]
+    },
+    {
+      "title": "The situation facing UK public libraries and the need to change the status and approach of interlending",
+      "year": "2011",
+      "format": "Journal article",
+      "url": "https://doi.org/10.1108/02641611111164618",
+      "description": "An early peer-reviewed article, included as a curiosity.",
+      "tags": [
+        "writing",
+        "public-services"
+      ],
+      "pages": [
+        "articles-and-essays"
+      ]
+    },
+    {
+      "title": "Systemic consulting: rethinking the consultant’s role",
+      "year": "2025",
+      "format": "SCiO public resource",
+      "url": "https://www.systemspractice.org/resources/systemic-consulting-rethinking-consultants-role-workshop-sysprac25",
+      "description": "Workshop at SysPrac25.",
+      "tags": [
+        "systems",
+        "consulting",
+        "scio"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "facilitation-and-systems-consulting"
+      ]
+    },
+    {
+      "title": "Metaphor",
+      "year": "2021",
+      "format": "SCiO public resource",
+      "url": "https://www.systemspractice.org/resources/metaphor-presented-scio-development-event",
+      "description": "Niki Jobson and Benjamin P Taylor.",
+      "tags": [
+        "systems",
+        "scio"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "facilitation-and-systems-consulting"
+      ]
+    },
+    {
+      "title": "The four quadrants of thinking threats",
+      "year": "2021",
+      "format": "SCiO public resource",
+      "url": "https://www.systemspractice.org/resources/four-quadrants-thinking-threats",
+      "description": "A public SCiO resource.",
+      "tags": [
+        "systems",
+        "scio"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "four-quadrants"
+      ]
+    },
+    {
+      "title": "Systems leadership, change, theory and practice",
+      "year": "2023",
+      "format": "PDF",
+      "url": "/library/files/talks/systems-leadership-change-theory-and-practice.pdf",
+      "description": "A substantial public presentation.",
+      "tags": [
+        "systems",
+        "leadership"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "systems-leadership-change-practice"
+      ]
+    },
+    {
+      "title": "Five key questions for transformation",
+      "year": "",
+      "format": "PDF",
+      "url": "/library/files/talks/five-key-questions-for-transformation.pdf",
+      "description": "A one-page working prompt.",
+      "tags": [
+        "public-services",
+        "practice"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "public-service-transformation"
+      ]
+    },
+    {
+      "title": "Systems convening and boundary work",
+      "year": "2025",
+      "format": "PDF",
+      "url": "/library/files/talks/systems-convening-and-boundaries.pdf",
+      "description": "Core slides on convening across boundaries.",
+      "tags": [
+        "systems",
+        "leadership"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "systems-leadership-change-practice"
+      ]
+    },
+    {
+      "title": "Spaces and leadership stands",
+      "year": "2025",
+      "format": "PDF",
+      "url": "/library/files/talks/spaces-and-leadership-stands.pdf",
+      "description": "A short working deck.",
+      "tags": [
+        "leadership",
+        "practice"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "systems-leadership-change-practice"
+      ]
+    },
+    {
+      "title": "Introduction to four dynamics",
+      "year": "2023",
+      "format": "PDF",
+      "url": "/library/files/talks/introduction-to-four-dynamics.pdf",
+      "description": "A concise introduction to the four dynamics.",
+      "tags": [
+        "systems",
+        "practice"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "four-dynamics"
+      ]
+    },
+    {
+      "title": "A simplification of the Viable System Model",
+      "year": "2023",
+      "format": "PDF",
+      "url": "/library/files/talks/simplifying-the-viable-system-model.pdf",
+      "description": "A four-slide introduction.",
+      "tags": [
+        "systems",
+        "vsm"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "viable-system-model"
+      ]
+    },
+    {
+      "title": "Outcomes are the results of complex adaptive systems",
+      "year": "2025",
+      "format": "PDF",
+      "url": "/library/files/talks/outcomes-and-complex-adaptive-systems.pdf",
+      "description": "A public-service outcomes presentation.",
+      "tags": [
+        "systems",
+        "public-services"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "outcomes-and-complexity"
+      ]
+    },
+    {
+      "title": "Viable System Model lecture",
+      "year": "2025",
+      "format": "PDF",
+      "url": "/library/files/talks/viable-system-model-lecture.pdf",
+      "description": "A long-form teaching deck.",
+      "tags": [
+        "systems",
+        "vsm"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "viable-system-model"
+      ]
+    },
+    {
+      "title": "Power, systems, and the Viable System Model",
+      "year": "2023",
+      "format": "PDF",
+      "url": "/library/files/talks/power-systems-and-the-viable-system-model.pdf",
+      "description": "A Metaphorum presentation.",
+      "tags": [
+        "systems",
+        "vsm"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "viable-system-model",
+        "four-dynamics"
+      ]
+    },
+    {
+      "title": "Clarity practices",
+      "year": "2024",
+      "format": "PDF",
+      "url": "/library/files/talks/clarity-practices.pdf",
+      "description": "An extended teaching deck.",
+      "tags": [
+        "leadership",
+        "practice"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "five-core-practices"
+      ]
+    },
+    {
+      "title": "Large-group processes",
+      "year": "2024",
+      "format": "PDF",
+      "url": "/library/files/talks/large-group-processes.pdf",
+      "description": "A detailed SCiO teaching deck.",
+      "tags": [
+        "practice",
+        "scio"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "large-group-processes"
+      ]
+    },
+    {
+      "title": "Better conversations for better realities",
+      "year": "2025",
+      "format": "PDF",
+      "url": "/library/files/talks/better-conversations-for-better-realities.pdf",
+      "description": "Learning loops to break the devil’s bargain.",
+      "tags": [
+        "practice",
+        "leadership"
+      ],
+      "pages": [
+        "talks-and-sessions",
+        "productive-conversations"
+      ]
+    },
+    {
+      "title": "Drawing systems — a primer",
+      "year": "",
+      "format": "PDF",
+      "url": "/library/files/reference/drawing-systems-primer.pdf",
+      "description": "A short RedQuadrant visual primer.",
+      "tags": [
+        "systems",
+        "reference"
+      ],
+      "pages": [
+        "redquadrant-psta-reference"
+      ]
+    },
+    {
+      "title": "Systems archetypes — a primer",
+      "year": "",
+      "format": "PDF",
+      "url": "/library/files/reference/systems-archetypes-primer.pdf",
+      "description": "A compact RedQuadrant primer.",
+      "tags": [
+        "systems",
+        "reference"
+      ],
+      "pages": [
+        "redquadrant-psta-reference"
+      ]
+    },
+    {
+      "title": "Demand management sampler",
+      "year": "",
+      "format": "PDF",
+      "url": "/library/files/reference/redquadrant-demand-management-sampler.pdf",
+      "description": "A RedQuadrant whole-system demand reference.",
+      "tags": [
+        "public-services",
+        "reference"
+      ],
+      "pages": [
+        "redquadrant-psta-reference"
+      ]
+    },
+    {
+      "title": "Seven ways to save and improve — developed account",
+      "year": "",
+      "format": "PDF",
+      "url": "/library/files/reference/redquadrant-seven-ways-to-save-and-improve.pdf",
+      "description": "A developed RedQuadrant account.",
+      "tags": [
+        "public-services",
+        "reference"
+      ],
+      "pages": [
+        "redquadrant-psta-reference"
+      ]
+    },
+    {
+      "title": "Core systems-change slide set",
+      "year": "2020",
+      "format": "PDF",
+      "url": "/library/files/reference/redquadrant-systems-change-framework.pdf",
+      "description": "Historical working reference, not a finished publication.",
+      "tags": [
+        "systems",
+        "reference"
+      ],
+      "pages": [
+        "redquadrant-psta-reference"
+      ]
+    },
+    {
+      "title": "State of emergency — RedQuadrant shadow report",
+      "year": "2018",
+      "format": "PDF",
+      "url": "/library/files/reference/2018-state-of-transformation-redquadrant-shadow-report.pdf",
+      "description": "One of the five principal State of Transformation reports.",
+      "tags": [
+        "public-services",
+        "report"
+      ],
+      "pages": [
+        "redquadrant-psta-reference",
+        "state-of-transformation",
+        "reports-and-surveys"
       ]
     }
   ]
