@@ -32,6 +32,8 @@ jobs:
           cp CNAME _site/CNAME
           cp -R assets _site/assets
           cp -R library _site/library
+          cp -R toolshed _site/toolshed
+          cp practice-rules.js _site/practice-rules.js
           touch _site/.nojekyll
       - name: Refresh public catalogues
         run: node scripts/build-public-catalogues.mjs _site/library
