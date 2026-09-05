@@ -1,0 +1,30 @@
+name: Preserve legacy Wix public content
+on:
+  push:
+    branches: [main]
+    paths:
+      - web-estate/legacy-wix/PUBLIC-CONTENT-MANIFEST.json
+      - scripts/archive_legacy_wix.py
+      - .github/workflows/archive-legacy-wix.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: archive-legacy-wix
+  cancel-in-progress: false
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Preserve and verify public media
+        run: python3 scripts/archive_legacy_wix.py
+      - name: Commit recovered content
+        run: |
+          git add web-estate/legacy-wix
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Preserve verified legacy Wix public media'
+          git pull --rebase origin main
+          git push origin HEAD:main
