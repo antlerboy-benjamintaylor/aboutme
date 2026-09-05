@@ -1,30 +1,31 @@
 [
   {
     "name": "quadrant-resourcing",
-    "archive": "quadrant-resourcing/quadrant-resourcing-source-2026-09-05.zip",
+    "archive": "quadrant-resourcing-source-2026-09-05.zip",
     "bytes": 29613,
     "sha256": "eb5c239e087f53ce4a07e16311ee069bcb285e7c1326118eaf0c16367f230459",
     "files": 13
   },
   {
     "name": "breaking-the-shell",
-    "archive": "breaking-the-shell/breaking-the-shell-source-2026-09-05.zip",
+    "archive": "breaking-the-shell-source-2026-09-05.zip",
     "bytes": 13360,
     "sha256": "c04c11586f7f9825dd9be512dc186293c10def40a5ffe0bdffcc6aa2f433d146",
     "files": 13
   },
   {
     "name": "greebling",
-    "archive": "greebling/greebling-source-2026-09-05.zip",
+    "archive": "greebling-source-2026-09-05.zip",
     "bytes": 6728403,
     "sha256": "5d9d9f8f1c4a475827bc5f7e3b111d46592e0fa2b4af8b14fe2d9b12977f7575",
     "files": 139
   },
   {
     "name": "systems-events-redirect",
-    "archive": "systems-events-redirect/systems-events-redirect-source-2026-09-05.zip",
-    "bytes": 22904,
-    "sha256": "25db33839bb6e0a9190431093a420c43d7adcfe37113d4f2a3299d10711d642c",
-    "files": 16
+    "archive": "systems-events-redirect-source-2026-09-05.zip",
+    "bytes": 23287,
+    "sha256": "7edd6c842fef1ae90edefb1073fdb1927f3b1e8c26b54faf8d3ad418303e9f4b",
+    "files": 16,
+    "source_head": "5712a7a3c29ab21b6268b6978a032421053b8995"
   }
 ]
